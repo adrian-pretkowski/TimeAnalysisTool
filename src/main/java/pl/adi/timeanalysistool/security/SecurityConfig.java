@@ -33,11 +33,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         CustomAuthenticationFilter customAuthenticationFilter = new CustomAuthenticationFilter(authenticationManagerBean());
         customAuthenticationFilter.setFilterProcessesUrl("/api/login");
+
         http.csrf().disable();
+        http.cors();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.authorizeRequests().antMatchers("/api/login/**", "/api/token/refresh/**").permitAll();
-        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/users/**").hasAnyAuthority("ROLE_USER");
-        http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/user/save/**").hasAnyAuthority("ROLE_ADMIN");
+
+        http.authorizeRequests()
+                .antMatchers(HttpMethod.GET, "/api/users/**")
+                .hasAnyAuthority("ROLE_ADMIN", "ROLE_SUPER_ADMIN");
+
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/roles/**")
+                .hasAnyAuthority("ROLE_ADMIN", "ROLE_SUPER_ADMIN");
+
+        http.authorizeRequests().antMatchers(HttpMethod.POST, "/api/user/save/**")
+                .hasAnyAuthority("ROLE_SUPER_ADMIN");
+
         http.authorizeRequests().anyRequest().authenticated();
 //        http.addFilter(new CustomAuthenticationFilter(authenticationManagerBean()));
         http.addFilter(customAuthenticationFilter);
