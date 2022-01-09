@@ -17,6 +17,7 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -32,10 +33,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         AppUser appUser = userRepo.findByUsername(username);
         if (appUser == null) {
-            log.error("User not found in the database...");
+            log.error("[DB] User not found in the database...");
             throw new UsernameNotFoundException("User not found in the database...");
         } else {
-            log.info("User {} found in the database...", username);
+            log.info("[DB] User {} found in the database...", username);
         }
         Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
         appUser.getRoles().forEach(role -> {
@@ -46,20 +47,20 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public AppUser saveUser(AppUser appUser) {
-        log.info("Saving new user: {} to the database.", appUser.getUsername());
+        log.info("[DB] Saving new user: {} to the database.", appUser.getUsername());
         appUser.setPassword(passwordEncoder.encode(appUser.getPassword()));
         return userRepo.save(appUser);
     }
 
     @Override
     public Role saveRole(Role role) {
-        log.info("Saving new role: {} to the database.", role.getName());
+        log.info("[DB] Saving new role: {} to the database.", role.getName());
         return roleRepo.save(role);
     }
 
     @Override
     public void addRoleToUser(String username, String roleName) {
-        log.info("Adding role: {} to user: {}.", roleName, username);
+        log.info("[DB] Adding role: {} to user: {}.", roleName, username);
         AppUser appUser = userRepo.findByUsername(username);
         Role role = roleRepo.findByName(roleName);
         appUser.getRoles().add(role); //transaction -> auto save
@@ -67,19 +68,52 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public AppUser getUser(String username) {
-        log.info("Fetching user: {}.", username);
+        log.info("[DB] Fetching user: {}.", username);
         return userRepo.findByUsername(username);
     }
 
     @Override
+    public AppUser getUserByEmail(String email) {
+        log.info("[DB] Fetching email: {}.", email);
+        return userRepo.findByEmail(email);
+    }
+
+    public AppUser getUserById(Long id) {
+        log.info("[DB] Fetching id: {}.", id);
+        return userRepo.findById(id).orElseThrow();
+    }
+
+    @Override
+    public void deleteUser(String username) {
+        AppUser userFoundByUsername = userRepo.findByUsername(username);
+        if (userFoundByUsername != null) {
+            log.info("[DB] Deleting user: {}.", username);
+            userRepo.deleteByUsername(username);
+        } else {
+            log.warn("[DB] User with given username: {} doest not exist", username);
+        }
+    }
+
+    @Override
+    public void deleteUserById(Long id) {
+        Optional<AppUser> userById = userRepo.findById(id);
+        if (userById.isPresent()) {
+            log.info("[DB] Deleting user by id: {}", id);
+            userRepo.deleteById(id);
+        } else {
+            log.warn("[DB] User with given id: {} doest not exist", id);
+        }
+    }
+
+    @Override
     public List<AppUser> getUsers() {
-        log.info("Fetching all users...");
+        log.info("[DB] Fetching all users...");
         return userRepo.findAll();
     }
 
     @Override
     public List<Role> getRoles() {
-        log.info("Fetching all roles...");
+        log.info("[DB] Fetching all roles...");
         return roleRepo.findAll();
     }
 

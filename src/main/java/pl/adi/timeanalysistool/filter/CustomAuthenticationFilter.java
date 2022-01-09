@@ -42,8 +42,8 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        log.info("Username is: {} ", username);
-        log.info("Password is: {} ", password);
+        log.info("[ENDPOINT: /api/login] Username is: {} ", username);
+        log.info("[ENDPOINT: /api/login] Password is: {} ", password);
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username, password);
         return authenticationManager.authenticate(authenticationToken);
     }
@@ -76,12 +76,12 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
 
         response.setContentType(APPLICATION_JSON_VALUE);
         new ObjectMapper().writeValue(response.getOutputStream(), tokens);
-        log.info("Successful authentication for user: {}", user.getUsername());
+        log.info("[ENDPOINT: /api/login] Successful authentication for user: {}", user.getUsername());
     }
 
     @Override
     protected void unsuccessfulAuthentication(HttpServletRequest request, HttpServletResponse response, AuthenticationException failed) throws IOException, ServletException {
-        log.error("Unsuccessful authentication...");
+        log.error("[ENDPOINT: /api/login] Unsuccessful authentication...");
         response.setStatus(HttpStatus.UNAUTHORIZED.value());
     }
 }

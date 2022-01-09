@@ -48,10 +48,22 @@ public class UserResource {
         return ResponseEntity.ok().body(userService.getRoles());
     }
 
-    @PostMapping( "/user/save")
+    @PostMapping("/user/save")
     public ResponseEntity<AppUser> saveUser(@Valid @RequestBody AppUser appUser) {
-        URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentRequestUri().path("/api/user/save").toUriString());
-        return ResponseEntity.created(uri).body(userService.saveUser(appUser));
+        AppUser checkUsername = userService.getUser(appUser.getUsername());
+        AppUser checkEmail = userService.getUserByEmail(appUser.getEmail());
+        if (checkUsername == null) {
+            if (checkEmail == null) {
+                URI uri = URI.create(ServletUriComponentsBuilder.fromCurrentRequestUri().path("/api/user/save").toUriString());
+                return ResponseEntity.created(uri).body(userService.saveUser(appUser));
+            } else {
+                log.error("[ENDPOINT: /user/save] User with given email: {} exists.", checkEmail.getEmail());
+                return ResponseEntity.unprocessableEntity().header("error_message", "User with given e-mail already exists.").build();
+            }
+        } else {
+            log.error("[ENDPOINT: /user/save] User with given username: {} exists.", checkUsername.getUsername());
+            return ResponseEntity.unprocessableEntity().header("error_message", "User with given username already exists.").build();
+        }
     }
 
     @PostMapping("/role/save")
@@ -63,7 +75,20 @@ public class UserResource {
     @PostMapping("/role/addtouser")
     public ResponseEntity<?> addRoleToUser(@RequestBody RoleToUserForm form) {
         userService.addRoleToUser(form.getUsername(), form.getRoleName());
+        log.info("[ENDPOINT: /role/addtouser] Role: {} added to user: {}", form.getRoleName(), form.getUsername());
         return ResponseEntity.ok().build();
+    }
+
+    @DeleteMapping("/user/delete/{id}")
+    public ResponseEntity<Long> deleteUser(@PathVariable Long id) {
+        AppUser userById = userService.getUserById(id);
+        if (userById != null) {
+            userService.deleteUserById(id);
+            return ResponseEntity.ok().build();
+        } else {
+            log.error("[ENDPOINT: /user/delete] User with given id: {} not exist.", id);
+            return ResponseEntity.badRequest().build();
+        }
     }
 
     @GetMapping("/token/refresh")
@@ -91,7 +116,7 @@ public class UserResource {
                 tokens.put("refresh_token", refresh_token);
                 response.setContentType(APPLICATION_JSON_VALUE);
                 new ObjectMapper().writeValue(response.getOutputStream(), tokens);
-                log.info("Token refreshed for user {}", username);
+                log.info("[ENDPOINT: /token/refresh] Token refreshed for user {}", username);
 
             } catch (Exception e) {
                 response.setHeader("error", e.getMessage());

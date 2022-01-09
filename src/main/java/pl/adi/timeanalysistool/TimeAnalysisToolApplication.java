@@ -32,8 +32,8 @@ public class TimeAnalysisToolApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedMethods("GET", "POST")
-                        .exposedHeaders("access_token", "refresh_token");
+                        .allowedMethods("GET", "POST", "DELETE")
+                        .exposedHeaders("access_token", "refresh_token", "error_message");
             }
         };
     }
