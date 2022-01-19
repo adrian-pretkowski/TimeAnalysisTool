@@ -10,13 +10,11 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import pl.adi.timeanalysistool.domain.AppUser;
 import pl.adi.timeanalysistool.domain.Role;
-import pl.adi.timeanalysistool.domain.model.Function;
-import pl.adi.timeanalysistool.domain.model.TestPlan;
 import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
 import pl.adi.timeanalysistool.service.TestPlanService;
 import pl.adi.timeanalysistool.service.UserService;
 
-import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -94,9 +92,18 @@ public class TimeAnalysisToolApplication {
 
             //Testing TestPlanFunctionality
             ExtractFromLog extract = new ExtractFromLog();
-            File file = new File("D:\\Projekty\\TimeAnalysisTool\\src\\main\\resources\\testlogs\\timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt");
-            TestPlan testPlan = extract.extractLog(file.getPath(), "ML5", "Caddy5");
-            testPlanService.saveTestPlan(testPlan);
+//            File file = new File("D:\\Projekty\\TimeAnalysisTool\\src\\main\\resources\\testlogs\\timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt");
+
+            List<URL> resourceURLs = new ArrayList<>();
+            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035329_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035336_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035341_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV2ZZZSKZNX035316_TP_ML5.txt"));
+
+            for (URL resourceURL : resourceURLs) {
+                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "ML5", "Caddy5"));
+            }
         };
     }
 }

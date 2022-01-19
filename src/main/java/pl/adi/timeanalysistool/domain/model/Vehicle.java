@@ -1,17 +1,18 @@
 package pl.adi.timeanalysistool.domain.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
-public class Vehicle {
+public class Vehicle implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -28,5 +29,6 @@ public class Vehicle {
     private Map<String, Ecu> ecuMap = new LinkedHashMap<>();
 
     @OneToOne(mappedBy = "vehicle")
+    @JsonBackReference
     private TestPlan testPlan;
 }
