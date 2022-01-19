@@ -10,16 +10,22 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import pl.adi.timeanalysistool.domain.AppUser;
 import pl.adi.timeanalysistool.domain.Role;
+import pl.adi.timeanalysistool.domain.model.Function;
+import pl.adi.timeanalysistool.domain.model.TestPlan;
+import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
+import pl.adi.timeanalysistool.service.TestPlanService;
 import pl.adi.timeanalysistool.service.UserService;
 
+import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class TimeAnalysisToolApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(TimeAnalysisToolApplication.class, args);
-    }
+        }
 
     @Bean
     PasswordEncoder passwordEncoder() {
@@ -39,7 +45,7 @@ public class TimeAnalysisToolApplication {
     }
 
     @Bean
-    CommandLineRunner run(UserService userService) {
+    CommandLineRunner run(UserService userService, TestPlanService testPlanService) {
         return args -> {
             userService.saveRole(new Role(null, "ROLE_USER"));
             userService.saveRole(new Role(null, "ROLE_MANAGER"));
@@ -85,6 +91,12 @@ public class TimeAnalysisToolApplication {
             userService.addRoleToUser("arnold", "ROLE_SUPER_ADMIN");
             userService.addRoleToUser("arnold", "ROLE_ADMIN");
             userService.addRoleToUser("arnold", "ROLE_USER");
+
+            //Testing TestPlanFunctionality
+            ExtractFromLog extract = new ExtractFromLog();
+            File file = new File("D:\\Projekty\\TimeAnalysisTool\\src\\main\\resources\\testlogs\\timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt");
+            TestPlan testPlan = extract.extractLog(file.getPath(), "ML5", "Caddy5");
+            testPlanService.saveTestPlan(testPlan);
         };
     }
 }
