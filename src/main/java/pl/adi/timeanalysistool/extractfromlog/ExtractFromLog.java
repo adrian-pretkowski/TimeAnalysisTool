@@ -11,6 +11,13 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This class extracts TestPlan from Log-File
+ * Only one public method - extractLog.
+ *
+ * @author Adrian Prętkowski
+ * @version 1.0
+ */
 public class ExtractFromLog {
 
     private static final String START_TEST_KEY_WORD = "Start with";
@@ -18,6 +25,19 @@ public class ExtractFromLog {
 
     private List<String> fileLines = new ArrayList<>();
 
+    /**
+     * This method returns TestPlan.
+     * ReadWriteFile object is created for reading fileLines.
+     * All fileLines are stored in List.
+     * All Ecus are stored in LinkedHashMap.
+     *
+     *
+     * @param inputLogPath Path to Log-File.
+     * @param testLocation Current TestPlan location (ex. IBN3).
+     * @param vehicleTyp Typ of current Vehicle.
+     * @return TestPlan with all ecu's, functions and vehicle information.
+     * @see TestPlan
+     */
     public TestPlan extractLog(String inputLogPath, String testLocation, String vehicleTyp) {
 
         ReadWriteFile readWriteFile = new ReadWriteFile();
@@ -41,6 +61,11 @@ public class ExtractFromLog {
         return testPlan;
     }
 
+    /**
+     * Get date from current TestPlan.
+     * @param fileLines List with all fileLines.
+     * @return String with current date stored in Log-File.
+     */
     private String getTestDateFromLog(List<String> fileLines) {
         for (String fileLine : fileLines) {
             if (fileLine.contains("Test date")) {
@@ -50,6 +75,11 @@ public class ExtractFromLog {
         return null;
     }
 
+    /**
+     * Get vin from current TestPlan.
+     * @param fileLines List with all fileLines.
+     * @return String with current Vehicle's VIN stored in Log-File.
+     */
     private String getVinFromLog(List<String> fileLines) {
         for (String fileLine : fileLines) {
             if (fileLine.contains("Vehicle VIN:")) {
@@ -59,6 +89,11 @@ public class ExtractFromLog {
         return null;
     }
 
+    /**
+     * Get kenn number from current TestPlan.
+     * @param fileLines List with all fileLines.
+     * @return String with current Vehicle's VIN stored in Log-File.
+     */
     private String getKennNumberFromLog(List<String> fileLines) {
         for (String fileLine : fileLines) {
             if (fileLine.contains("Start with KNR:")) {
@@ -68,6 +103,11 @@ public class ExtractFromLog {
         return null;
     }
 
+    /**
+     * Get test duration from current TestPlan.
+     * @param fileLines List with all fileLines.
+     * @return Double value with current TestPlan duration.
+     */
     private double getTestDuration(List<String> fileLines) {
         String startTime = null, endTime = null;
         Date newStartTime = null, newEndTime = null;
@@ -102,6 +142,15 @@ public class ExtractFromLog {
 
     }
 
+    /**
+     * This method looks for Functions stored in Log-Fie for single ECU.
+     * Checks every fileLine for functionName, functionStartTime and functionDuration.
+     * Simply if statement checks Strings (if they aren't null)
+     * If file line contains "Connection.../Assembly..." counters are updated by +1;
+     *
+     * @param fileLines List with all fileLines.
+     * @param ecuMap Map with all ecus from current TestPlan.
+     */
     private void getFunctions(List<String> fileLines, Map<String, Ecu> ecuMap) {
         for (Map.Entry<String, Ecu> entry : ecuMap.entrySet()) {
             double ecuDurationValue = 0;
@@ -135,12 +184,31 @@ public class ExtractFromLog {
         }
     }
 
+    /**
+     * Method looks for Function name in a single fileLine.
+     * Input String ecuName comes from EcuMap (keyValue).
+     * Lines with "FISeQS/ConnectionOpen/ConnectionRelease" are skipped.
+     *
+     * @param fileLine List with all fileLines.
+     * @param ecuName Current Ecu name.
+     * @return String value with current Function duration.
+     */
     private String getFunctionDuration(String fileLine, String ecuName) {
         String tempEcuName = null;
         if (fileLine.contains("TM_")) {
             String[] lineWithEcu = fileLine.split(" ");
             tempEcuName = lineWithEcu[3].substring(0, lineWithEcu[3].length() - 1);
         }
+
+        /*
+        Protection against incorrect assigment of the ECU to the Function.
+        Example:
+        - ESP and ESP_V controllers
+        Before this protection was added, the ESP_V ecu Functions were added to the ESP ecu because method checked
+        whether the line contained the Ecu name and "ESP_V" contains "ESP".
+        Currently, a temporary Ecu name is created via the split function, and then this value is compared to the
+        input parameter of the method.
+        */
 
         String result;
         if (ecuName.equals(tempEcuName)
@@ -156,6 +224,14 @@ public class ExtractFromLog {
         }
     }
 
+    /**
+     * Method looks for sentence between two defined characters.
+     *
+     * @param fileLine Current fileLine.
+     * @param firstChar First defined character.
+     * @param secondChar Second defined character.
+     * @return String with found word/character between given characters.
+     */
     private String findBetweenCharacters(String fileLine, String firstChar, String secondChar) {
         String result = null;
         String regex = firstChar + "(.*?)" + secondChar;
@@ -167,6 +243,12 @@ public class ExtractFromLog {
         return result;
     }
 
+    /**
+     * Method looks for Function StartTime in a single fileLine.
+     * @param fileLine Current fileLine.
+     * @param ecuName ecuName comes from EcuMap (keyValue)
+     * @return String with current Function's startTime.
+     */
     private String getFunctionStartTime(String fileLine, String ecuName) {
         String result;
         if (fileLine.contains(ecuName)
@@ -181,6 +263,12 @@ public class ExtractFromLog {
         }
     }
 
+    /**
+     * Method looks for Function name in a single fileLine.
+     * @param fileLine Current fileLine.
+     * @param ecuName ecuName comes from EcuMap (keyValue).
+     * @return String with current Function's name.
+     */
     private String getFunctionName(String fileLine, String ecuName) {
         String result;
         if (fileLine.contains(ecuName)
@@ -195,6 +283,14 @@ public class ExtractFromLog {
         }
     }
 
+    /**
+     * Method creates EcuMap based on LogFile.
+     * For loop looks for ecuName in every single fileLine.
+     * If fileLine contains "TM_" -> line split (with space) and takes ecuName (3rd element in String Array after split)
+     *
+     * @param fileLines List with all fileLines.
+     * @return Map with all found Ecus in current TestPlan.
+     */
     private Map<String, Ecu> getEcuMap(List<String> fileLines) {
         Map<String, Ecu> resultEcuMap = new LinkedHashMap<>();
 

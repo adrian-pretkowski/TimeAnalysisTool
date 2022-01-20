@@ -8,6 +8,14 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * Function entity contains information about Function (id, functionId, name, etc.)
+ *
+ * functionId - used for parallelism.
+ *
+ * @since 1.0
+ * @author Adrian Prętkowski
+ */
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Function implements Serializable {
@@ -20,6 +28,13 @@ public class Function implements Serializable {
     private String startTime;
     private Double duration;
 
+    /**
+     * Mapping with Ecu.
+     *
+     * JsonBackReference - protection against infinity recursion during creating JSON response in RESTAPI.
+     *
+     * @see Ecu
+     */
     @ManyToOne
     @JoinColumn(name = "ecu_id")
     @JsonBackReference
