@@ -180,7 +180,8 @@ public class ExtractFromLog {
                     entry.getValue().addAssemblyCheckCounter();
                 }
             }
-            entry.getValue().setTotalEcuDuration(ecuDurationValue);
+            //Rounding to 2 decimal places.
+            entry.getValue().setTotalEcuDuration(((Math.round(ecuDurationValue * 100.0)) / 100.0));
         }
     }
 
