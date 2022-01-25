@@ -24,6 +24,12 @@ public class TestPlanServiceImpl implements TestPlanService {
     }
 
     @Override
+    public List<String> getDistinctTestLocationByVehicleTyp(String vehicleTyp) {
+        log.info("[DB] Fetching distinct test locations for vehicle: {}", vehicleTyp);
+        return testPlanRepo.findDistinctTestLocationsBasedOnVehicleTyp(vehicleTyp);
+    }
+
+    @Override
     public TestPlan getTestPlanById(Long id) {
         log.info("[DB] Fetching TestPlan id: {}", id);
         return testPlanRepo.findById(id).orElseThrow();

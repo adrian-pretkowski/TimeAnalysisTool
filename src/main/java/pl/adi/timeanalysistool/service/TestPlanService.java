@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface TestPlanService {
     TestPlan saveTestPlan (TestPlan testPlan);
+    List<String> getDistinctTestLocationByVehicleTyp(String vehicleTyp);
     TestPlan getTestPlanById (Long id);
     List<TestPlan> getTestPlans();
 }
