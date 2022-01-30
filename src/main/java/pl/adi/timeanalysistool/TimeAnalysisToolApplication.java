@@ -104,6 +104,7 @@ public class TimeAnalysisToolApplication {
             for (URL resourceURL : resourceURLs) {
                 testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Caddy5"));
                 testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "ID.BUZZ"));
+                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "ID.BUZZ"));
             }
         };
     }

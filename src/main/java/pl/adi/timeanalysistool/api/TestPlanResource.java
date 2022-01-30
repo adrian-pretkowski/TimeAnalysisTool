@@ -26,4 +26,9 @@ public class TestPlanResource {
     public ResponseEntity<List<String>> getDistinctLocationsBasedOnVehicleTyp(@PathVariable String vehicleTyp) {
         return ResponseEntity.ok().body(testPlanService.getDistinctTestLocationByVehicleTyp(vehicleTyp));
     }
+
+    @GetMapping("/testplans/{vehicleTyp}/{testLocation}")
+    public ResponseEntity<List<TestPlan>> getTestPlansBasedOnVehicleTypAndLocation(@PathVariable String vehicleTyp, @PathVariable String testLocation) {
+        return ResponseEntity.ok().body(testPlanService.getTestPlansBasedOnVehicleTypAndTestLocation(vehicleTyp, testLocation));
+    }
 }

@@ -36,6 +36,12 @@ public class TestPlanServiceImpl implements TestPlanService {
     }
 
     @Override
+    public List<TestPlan> getTestPlansBasedOnVehicleTypAndTestLocation(String vehicleTyp, String testLocation) {
+        log.info("[DB] Fetching TestPlans based on vehicleTyp: {} and testLocation: {}", vehicleTyp, testLocation);
+        return testPlanRepo.findTestPlansBasedOnVehicleTypAndTestLocation(vehicleTyp, testLocation);
+    }
+
+    @Override
     public List<TestPlan> getTestPlans() {
         log.info("[DB] Fetching all TestPlans...");
         return testPlanRepo.findAll();
