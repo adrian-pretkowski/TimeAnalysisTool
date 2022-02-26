@@ -2,7 +2,6 @@ package pl.adi.timeanalysistool.api;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.adi.timeanalysistool.domain.model.TestPlan;
@@ -35,6 +34,9 @@ public class TestPlanResource {
 
     @PostMapping("/testplans/save")
     public ResponseEntity<TestPlan> saveTestPlanToDatabase(@RequestBody List<String> fileLines) {
+        // ToDo: Validate data
+        // ToDo: Check if given TestPlan exist with given Location and VIN
+        // ToDo: Save TestPlan
         for (String fileLine : fileLines) {
             System.out.println(fileLine);
         }
