@@ -3,6 +3,10 @@ spring:
     url: jdbc:h2:file:./database
     username: sa
     password:
+    #Postgres Config
+  #      url: jdbc:postgresql://ec2-34-247-118-233.eu-west-1.compute.amazonaws.com:5432/dbs8ghbodu3r4k
+  #      username: ftcraqtvkywfqf
+  #      password: d49d86b22011bbd8ba80f81cf405d7341898e795dfc4dc987d1c2e1eae990f32
   h2:
     console:
       enabled: true
@@ -11,6 +15,12 @@ spring:
     hibernate:
       ddl-auto: create
     show-sql: false
+
+    #Postgres Config
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.PostgreSQL81Dialect
 
 
 

@@ -24,7 +24,7 @@ import java.util.Map;
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class Vehicle implements Serializable {
 
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String vehicleTyp;

@@ -20,7 +20,7 @@ import java.io.Serializable;
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Function implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private int functionId;

@@ -14,7 +14,8 @@ public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
     List<String> findDistinctTestLocations();
 
     @Query("SELECT DISTINCT tp.testLocation from TestPlan tp " +
-            "INNER JOIN Vehicle v ON tp.vehicle = v.testPlan WHERE v.vehicleTyp = :vehicleTyp")
+            "INNER JOIN Vehicle v ON tp.vehicle = v.testPlan " +
+            "WHERE v.vehicleTyp = :vehicleTyp")
     List<String> findDistinctTestLocationsBasedOnVehicleTyp(@Param("vehicleTyp") String vehicleTyp);
 
     @Query("SELECT DISTINCT tp from TestPlan tp " +

@@ -22,7 +22,7 @@ import java.io.Serializable;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class TestPlan implements Serializable {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String testLocation;

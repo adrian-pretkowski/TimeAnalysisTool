@@ -13,7 +13,7 @@ import java.util.Collection;
 
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class AppUser {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotEmpty(message = "First name cannot be empty...")

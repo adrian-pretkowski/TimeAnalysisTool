@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import pl.adi.timeanalysistool.domain.AppUser;
 import pl.adi.timeanalysistool.domain.Role;
 import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
+import pl.adi.timeanalysistool.service.FunctionService;
 import pl.adi.timeanalysistool.service.TestPlanService;
 import pl.adi.timeanalysistool.service.UserService;
 
@@ -43,7 +44,7 @@ public class TimeAnalysisToolApplication {
     }
 
     @Bean
-    CommandLineRunner run(UserService userService, TestPlanService testPlanService) {
+    CommandLineRunner run(UserService userService, TestPlanService testPlanService, FunctionService functionService) {
         return args -> {
             userService.saveRole(new Role(null, "ROLE_USER"));
             userService.saveRole(new Role(null, "ROLE_MANAGER"));
