@@ -10,6 +10,19 @@ import java.util.List;
 public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
     TestPlan findByTestLocation(String testLocation);
 
+    @Query("SELECT tp from TestPlan tp " +
+            "JOIN tp.vehicle v " +
+            "JOIN v.ecuMap e " +
+            "WHERE e.id = :ecuId")
+    TestPlan findTestPlanByEcuId(@Param("ecuId") Long ecuId);
+
+    @Query("SELECT tp from TestPlan tp " +
+            "JOIN tp.vehicle v " +
+            "JOIN v.ecuMap e " +
+            "JOIN e.functionList f " +
+            "WHERE f.id = :functionId")
+    TestPlan findTestPlanByFunctionId(@Param("functionId") Long functionId);
+
     @Query("SELECT DISTINCT testLocation from TestPlan")
     List<String> findDistinctTestLocations();
 

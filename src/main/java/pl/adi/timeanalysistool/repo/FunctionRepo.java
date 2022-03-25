@@ -10,6 +10,24 @@ import java.util.List;
 public interface FunctionRepo extends JpaRepository<Function, Long> {
     Function findByFunctionName(String functionName);
 
+    @Query("SELECT f FROM Function f " +
+            "JOIN f.ecu e " +
+            "JOIN e.vehicle v " +
+            "WHERE v.vehicleTyp = :vehicleTyp " +
+            "AND e.ecuName = :ecuName " +
+            "AND f.functionName = :functionName")
+    List<Function> findAllFunctionsBasedOnVehicleTypAndEcuNameAndFunctionName(@Param("vehicleTyp") String vehicleTyp,
+                                                                              @Param("ecuName") String ecuName,
+                                                                              @Param("functionName") String functionName);
+
+    @Query("SELECT DISTINCT f.functionName from Function f " +
+            "JOIN f.ecu e " +
+            "JOIN e.vehicle v " +
+            "WHERE v.vehicleTyp = :vehicleTyp " +
+            "AND e.ecuName = :ecuName")
+    List<String> findAllDistinctFunctionNamesBasedOnVehicleTypAndEcuName(@Param("vehicleTyp") String vehicleTyp,
+                                                                         @Param("ecuName") String ecuName);
+
     @Query("SELECT f.duration from Function f " +
             "JOIN f.ecu e " +
             "JOIN e.vehicle v " +

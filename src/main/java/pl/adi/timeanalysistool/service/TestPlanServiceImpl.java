@@ -18,6 +18,18 @@ public class TestPlanServiceImpl implements TestPlanService {
     private final TestPlanRepo testPlanRepo;
 
     @Override
+    public TestPlan getTestPlanByEcuId(Long ecuId) {
+        log.info("[DB] Fetching TestPlan based on EcuID: {}", ecuId);
+        return testPlanRepo.findTestPlanByEcuId(ecuId);
+    }
+
+    @Override
+    public TestPlan getTestPlanByFunctionId(Long functionId) {
+        log.info("[DB] Fetching TestPlan based on FunctionID: {}", functionId);
+        return testPlanRepo.findTestPlanByFunctionId(functionId);
+    }
+
+    @Override
     public TestPlan saveTestPlan(TestPlan testPlan) {
         log.info("[DB] Saving new TestPlan, location: {} to the database.", testPlan.getTestLocation());
         return testPlanRepo.save(testPlan);

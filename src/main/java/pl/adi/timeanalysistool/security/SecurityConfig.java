@@ -38,6 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors();
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         http.authorizeRequests().antMatchers("/api/login/**", "/api/token/refresh/**").permitAll();
+        http.authorizeRequests().antMatchers("/h2-console/**")
+                .permitAll().and().headers().frameOptions().disable();
 
         http.authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/api/users/**")
@@ -60,6 +62,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/functions/**")
                         .hasAnyAuthority("ROLE_ADMIN", "ROLE_SUPER_ADMIN");
+        http.authorizeRequests().antMatchers(HttpMethod.GET, "/api/ecus/**")
+                .hasAnyAuthority("ROLE_ADMIN", "ROLE_SUPER_ADMIN");
 
         http.authorizeRequests().anyRequest().authenticated();
 //        http.addFilter(new CustomAuthenticationFilter(authenticationManagerBean()));

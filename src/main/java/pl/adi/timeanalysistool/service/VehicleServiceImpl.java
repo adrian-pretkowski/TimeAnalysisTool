@@ -18,9 +18,17 @@ public class VehicleServiceImpl implements VehicleService{
     private final VehicleRepo vehicleRepo;
 
     @Override
-    public Vehicle getVehicleById(Long id) {
-        return null;
+    public Vehicle getVehicleByEcuId(Long ecuId) {
+        log.info("[DB] Fetching Vehicle based on EcuID: {}", ecuId);
+        return vehicleRepo.findVehicleByEcuId(ecuId);
     }
+
+    @Override
+    public Vehicle getVehicleByFunctionId(Long functionId) {
+        log.info("[DB] Fetching Vehicle based on FunctionID: {}", functionId);
+        return vehicleRepo.findVehicleByFunctionId(functionId);
+    }
+
 
     @Override
     public List<String> getDistinctVehicles() {

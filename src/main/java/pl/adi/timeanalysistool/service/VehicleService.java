@@ -5,7 +5,10 @@ import pl.adi.timeanalysistool.domain.model.Vehicle;
 import java.util.List;
 
 public interface VehicleService {
-    Vehicle getVehicleById(Long id);
+
+    Vehicle getVehicleByEcuId(Long ecuId);
+
+    Vehicle getVehicleByFunctionId(Long functionId);
 
     List<String> getDistinctVehicles();
 

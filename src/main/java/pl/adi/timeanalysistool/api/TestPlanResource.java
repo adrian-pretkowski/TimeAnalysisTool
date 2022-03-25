@@ -22,6 +22,16 @@ public class TestPlanResource {
         return ResponseEntity.ok().body(testPlanService.getTestPlans());
     }
 
+    @GetMapping("/testplans/based-on-ecu-id/{ecuId}")
+    public ResponseEntity<TestPlan> getTestPlanBasedOnEcuId (@PathVariable String ecuId) {
+        return ResponseEntity.ok().body(testPlanService.getTestPlanByEcuId(Long.valueOf(ecuId)));
+    }
+
+    @GetMapping("/testplans/based-on-function-id/{functionId}")
+    public ResponseEntity<TestPlan> getTestPlanBasedOnFunctionId (@PathVariable String functionId) {
+        return ResponseEntity.ok().body(testPlanService.getTestPlanByFunctionId(Long.valueOf(functionId)));
+    }
+
     @GetMapping("/testplans/locations/{vehicleTyp}")
     public ResponseEntity<List<String>> getDistinctLocationsBasedOnVehicleTyp(@PathVariable String vehicleTyp) {
         return ResponseEntity.ok().body(testPlanService.getDistinctTestLocationByVehicleTyp(vehicleTyp));
