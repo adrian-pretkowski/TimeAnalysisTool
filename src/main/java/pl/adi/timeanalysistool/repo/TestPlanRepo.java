@@ -8,8 +8,6 @@ import pl.adi.timeanalysistool.domain.model.TestPlan;
 import java.util.List;
 
 public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
-    TestPlan findByTestLocation(String testLocation);
-
     @Query("SELECT tp from TestPlan tp " +
             "JOIN tp.vehicle v " +
             "JOIN v.ecuMap e " +
@@ -23,9 +21,6 @@ public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
             "WHERE f.id = :functionId")
     TestPlan findTestPlanByFunctionId(@Param("functionId") Long functionId);
 
-    @Query("SELECT DISTINCT testLocation from TestPlan")
-    List<String> findDistinctTestLocations();
-
     @Query("SELECT DISTINCT tp.testLocation from TestPlan tp " +
             "INNER JOIN Vehicle v ON tp.vehicle = v.testPlan " +
             "WHERE v.vehicleTyp = :vehicleTyp")
@@ -37,5 +32,4 @@ public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
     List<TestPlan> findTestPlansBasedOnVehicleTypAndTestLocation(@Param("vehicleTyp") String vehicleTyp,
                                                                  @Param("testLocation") String testLocation);
 
-    void deleteById(Long id);
 }

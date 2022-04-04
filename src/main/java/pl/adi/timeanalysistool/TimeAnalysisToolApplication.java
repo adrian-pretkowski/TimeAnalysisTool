@@ -103,9 +103,12 @@ public class TimeAnalysisToolApplication {
             resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV2ZZZSKZNX035316_TP_ML5.txt"));
 
             for (URL resourceURL : resourceURLs) {
-                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Caddy5"));
-                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "ID.BUZZ"));
-                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "ID.BUZZ"));
+//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Caddy5"));
+//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "ID.BUZZ"));
+//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "ID.BUZZ"));
+                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Vehicle 1"));
+                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "Vehicle 2"));
+                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Vehicle 2"));
             }
         };
     }
