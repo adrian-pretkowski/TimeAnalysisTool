@@ -8,7 +8,8 @@ import pl.adi.timeanalysistool.domain.model.Ecu;
 import java.util.List;
 
 public interface EcuRepo extends JpaRepository<Ecu, Long> {
-    Ecu findByEcuName(String ecuName);
+
+    boolean existsByEcuName(String ecuName);
 
     @Query("SELECT DISTINCT e.ecuName from Ecu e " +
             "JOIN e.vehicle v " +

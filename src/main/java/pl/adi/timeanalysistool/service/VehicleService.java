@@ -12,5 +12,4 @@ public interface VehicleService {
 
     List<String> getDistinctVehicles();
 
-    List<Vehicle> getVehicles();
 }

@@ -10,6 +10,8 @@ import java.util.List;
 public interface VehicleRepo extends JpaRepository<Vehicle, Long> {
     Vehicle findByKennNumber(String kennNumber);
 
+    boolean existsByVehicleTyp(String vehicleTyp);
+
     @Query("select distinct vehicleTyp from Vehicle")
     List<String> findDistinctVehicles();
 

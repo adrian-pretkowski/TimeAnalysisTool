@@ -79,6 +79,7 @@ public class UserResource {
         return ResponseEntity.ok().build();
     }
 
+    //ToDo: Do it with ExceptionHandler!
     @DeleteMapping("/user/delete/{id}")
     public ResponseEntity<Long> deleteUser(@PathVariable Long id) {
         AppUser userById = userService.getUserById(id);

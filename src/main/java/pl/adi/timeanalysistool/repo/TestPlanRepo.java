@@ -8,6 +8,9 @@ import pl.adi.timeanalysistool.domain.model.TestPlan;
 import java.util.List;
 
 public interface TestPlanRepo extends JpaRepository<TestPlan, Long> {
+
+    boolean existsByTestLocation(String testLocation);
+
     @Query("SELECT tp from TestPlan tp " +
             "JOIN tp.vehicle v " +
             "JOIN v.ecuMap e " +

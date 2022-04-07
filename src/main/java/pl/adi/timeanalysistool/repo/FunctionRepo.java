@@ -10,6 +10,8 @@ import java.util.List;
 public interface FunctionRepo extends JpaRepository<Function, Long> {
     Function findByFunctionName(String functionName);
 
+    boolean existsByFunctionName(String functionName);
+
     @Query("SELECT f FROM Function f " +
             "JOIN f.ecu e " +
             "JOIN e.vehicle v " +
