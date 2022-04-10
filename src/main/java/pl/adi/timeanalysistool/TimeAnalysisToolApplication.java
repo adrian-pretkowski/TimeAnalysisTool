@@ -93,19 +93,15 @@ public class TimeAnalysisToolApplication {
 
             //Testing TestPlanFunctionality
             ExtractFromLog extract = new ExtractFromLog();
-//            File file = new File("D:\\Projekty\\TimeAnalysisTool\\src\\main\\resources\\testlogs\\timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt");
 
             List<URL> resourceURLs = new ArrayList<>();
-            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt"));
-            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035329_TP_ML5.txt"));
-            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035336_TP_ML5.txt"));
-            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV1ZZZSKZNX035341_TP_ML5.txt"));
-            resourceURLs.add(getClass().getClassLoader().getResource("./testlogs/timeMeasurement_WV2ZZZSKZNX035316_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("testing/timeMeasurement_WV1ZZZSKZNX035307_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("testing/timeMeasurement_WV1ZZZSKZNX035329_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("testing/timeMeasurement_WV1ZZZSKZNX035336_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("testing/timeMeasurement_WV1ZZZSKZNX035341_TP_ML5.txt"));
+            resourceURLs.add(getClass().getClassLoader().getResource("testing/timeMeasurement_WV2ZZZSKZNX035316_TP_ML5.txt"));
 
             for (URL resourceURL : resourceURLs) {
-//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Caddy5"));
-//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "ID.BUZZ"));
-//                testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "ID.BUZZ"));
                 testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Vehicle 1"));
                 testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN1", "Vehicle 2"));
                 testPlanService.saveTestPlan(extract.extractLog(resourceURL.getPath(), "IBN3", "Vehicle 2"));
