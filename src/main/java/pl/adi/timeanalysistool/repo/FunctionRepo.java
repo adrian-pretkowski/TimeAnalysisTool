@@ -8,7 +8,6 @@ import pl.adi.timeanalysistool.domain.model.Function;
 import java.util.List;
 
 public interface FunctionRepo extends JpaRepository<Function, Long> {
-    Function findByFunctionName(String functionName);
 
     boolean existsByFunctionName(String functionName);
 
@@ -42,6 +41,4 @@ public interface FunctionRepo extends JpaRepository<Function, Long> {
                                                                                           @Param("testLocation") String testLocation,
                                                                                           @Param("ecuName") String ecuName,
                                                                                           @Param("functionName") String functionName);
-
-    void deleteById(Long id);
 }

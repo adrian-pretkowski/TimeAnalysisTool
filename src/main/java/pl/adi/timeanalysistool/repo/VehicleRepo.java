@@ -8,7 +8,6 @@ import pl.adi.timeanalysistool.domain.model.Vehicle;
 import java.util.List;
 
 public interface VehicleRepo extends JpaRepository<Vehicle, Long> {
-    Vehicle findByKennNumber(String kennNumber);
 
     boolean existsByVehicleTyp(String vehicleTyp);
 
@@ -26,5 +25,4 @@ public interface VehicleRepo extends JpaRepository<Vehicle, Long> {
             "WHERE f.id = :functionId")
     Vehicle findVehicleByFunctionId(@Param("functionId") Long functionId);
 
-    void deleteById(Long id);
 }

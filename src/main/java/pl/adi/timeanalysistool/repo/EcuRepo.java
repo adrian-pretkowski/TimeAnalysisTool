@@ -35,6 +35,4 @@ public interface EcuRepo extends JpaRepository<Ecu, Long> {
             @Param("testLocation") String testLocation,
             @Param("ecuName") String ecuName
     );
-
-    void deleteById(Long id);
 }
