@@ -1,17 +1,12 @@
 package pl.adi.timeanalysistool.repo;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
-import pl.adi.timeanalysistool.domain.model.Function;
 import pl.adi.timeanalysistool.domain.model.TestPlan;
 import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
 
 import java.net.URL;
-import java.util.Collection;
 import java.util.List;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

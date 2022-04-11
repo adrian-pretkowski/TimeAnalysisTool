@@ -1,5 +1,6 @@
 package pl.adi.timeanalysistool;
 
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -7,6 +8,16 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import pl.adi.timeanalysistool.domain.AppUser;
+import pl.adi.timeanalysistool.domain.Role;
+import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
+import pl.adi.timeanalysistool.service.FunctionService;
+import pl.adi.timeanalysistool.service.TestPlanService;
+import pl.adi.timeanalysistool.service.UserService;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class TimeAnalysisToolApplication {
@@ -31,8 +42,8 @@ public class TimeAnalysisToolApplication {
             }
         };
     }
- /*
- Uncomment when DB is restarted, and you want to fill the DB.
+/*
+ //Uncomment when DB is restarted, and you want to fill the DB.
     @Bean
     CommandLineRunner run(UserService userService, TestPlanService testPlanService, FunctionService functionService) {
         return args -> {
