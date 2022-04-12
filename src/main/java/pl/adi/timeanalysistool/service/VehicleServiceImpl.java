@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import pl.adi.timeanalysistool.domain.model.Vehicle;
+import pl.adi.timeanalysistool.exception.EcuNotFoundException;
 import pl.adi.timeanalysistool.exception.FunctionNotFoundException;
 import pl.adi.timeanalysistool.exception.VehicleNotFoundException;
 import pl.adi.timeanalysistool.repo.EcuRepo;
@@ -32,7 +33,7 @@ public class VehicleServiceImpl implements VehicleService {
         if (existsById) {
             return vehicleRepo.findVehicleByEcuId(ecuId);
         } else {
-            throw new VehicleNotFoundException("Ecu with given ID does not exist.");
+            throw new EcuNotFoundException("Ecu with given ID does not exist.");
         }
     }
 
