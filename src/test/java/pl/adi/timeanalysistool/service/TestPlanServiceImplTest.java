@@ -1,7 +1,6 @@
 package pl.adi.timeanalysistool.service;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -10,6 +9,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import pl.adi.timeanalysistool.domain.model.TestPlan;
 import pl.adi.timeanalysistool.exception.EcuNotFoundException;
 import pl.adi.timeanalysistool.exception.FunctionNotFoundException;
+import pl.adi.timeanalysistool.exception.TestPlanNotFoundException;
+import pl.adi.timeanalysistool.exception.VehicleNotFoundException;
 import pl.adi.timeanalysistool.extractfromlog.ExtractFromLog;
 import pl.adi.timeanalysistool.repo.EcuRepo;
 import pl.adi.timeanalysistool.repo.FunctionRepo;
@@ -17,20 +18,24 @@ import pl.adi.timeanalysistool.repo.TestPlanRepo;
 import pl.adi.timeanalysistool.repo.VehicleRepo;
 
 import java.net.URL;
+import java.util.Optional;
 
 import static org.assertj.core.api.AssertionsForClassTypes.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class TestPlanServiceImplTest {
 
-    @Mock private TestPlanRepo testPlanRepo;
-    @Mock private VehicleRepo vehicleRepo;
-    @Mock private EcuRepo ecuRepo;
-    @Mock private FunctionRepo functionRepo;
+    @Mock
+    private TestPlanRepo testPlanRepo;
+    @Mock
+    private VehicleRepo vehicleRepo;
+    @Mock
+    private EcuRepo ecuRepo;
+    @Mock
+    private FunctionRepo functionRepo;
     private TestPlanServiceImpl testPlanServiceImplUnderTest;
 
     @BeforeEach
@@ -102,7 +107,7 @@ class TestPlanServiceImplTest {
     }
 
     @Test
-    void shouldThrowExceptionWhenTestPlanDoesNotExistWithGivenFunctionId(){
+    void shouldThrowExceptionWhenTestPlanDoesNotExistWithGivenFunctionId() {
         //given
         Long functionId = 25L;
         given(functionRepo.existsById(functionId)).willReturn(false);
@@ -133,18 +138,132 @@ class TestPlanServiceImplTest {
     }
 
     @Test
-    @Disabled
-    void getDistinctTestLocationByVehicleTyp() {
+    void shouldGetDistinctTestLocationByVehicleTyp() {
+        //given
+        String vehicleTyp = "Vehicle 1";
+        given(vehicleRepo.existsByVehicleTyp(vehicleTyp)).willReturn(true);
+
+        //when
+        //then
+        assertThatCode(
+                () -> testPlanServiceImplUnderTest.getDistinctTestLocationByVehicleTyp(
+                        vehicleTyp))
+                .doesNotThrowAnyException();
+
+        verify(testPlanRepo).findDistinctTestLocationsBasedOnVehicleTyp(any());
     }
 
     @Test
-    @Disabled
-    void getTestPlanById() {
+    void shouldThrowExceptionWhenVehicleTypDoesNotExist() {
+        //given
+        String vehicleTyp = "Vehicle 3";
+        given(vehicleRepo.existsByVehicleTyp(vehicleTyp)).willReturn(false);
+
+        //when
+        //then
+        assertThatThrownBy(
+                () -> testPlanServiceImplUnderTest.getDistinctTestLocationByVehicleTyp(vehicleTyp))
+                .isInstanceOf(VehicleNotFoundException.class)
+                .hasMessageContaining("Given Vehicle Typ does not exist.");
+
+        verify(testPlanRepo, never()).findDistinctTestLocationsBasedOnVehicleTyp(any());
     }
 
     @Test
-    @Disabled
-    void getTestPlansBasedOnVehicleTypAndTestLocation() {
+    void shouldThrowExceptionWhenVehicleDoesNotExistWithGivenId() {
+        //given
+        Long testPlanId = 1L;
+        given(testPlanRepo.findById(testPlanId)).willReturn(Optional.empty());
+
+        //when
+        //then
+        assertThatThrownBy(
+                () -> testPlanServiceImplUnderTest.getTestPlanById(testPlanId))
+                .isInstanceOf(VehicleNotFoundException.class)
+                .hasMessageContaining("Test Plan with given ID does not exist.");
+
+        verify(testPlanRepo).findById(any());
+    }
+
+    @Test
+    void shouldGetTestPlanById() {
+        //given
+        TestPlan testPlan = mock(TestPlan.class);
+        given(testPlanRepo.findById(any())).willReturn(Optional.of(testPlan));
+
+        //when
+        //then
+        assertThatCode(
+                () -> testPlanServiceImplUnderTest.getTestPlanById(any()))
+                .doesNotThrowAnyException();
+
+        verify(testPlanRepo).findById(any());
+    }
+
+
+    @Test
+    void shouldThrowVehicleNotFoundExceptionWhenVehicleTypDoesNotExist() {
+        //given
+        String testLocation = "IBN3";
+        String vehicleTyp = "Vehicle 1";
+        given(vehicleRepo.existsByVehicleTyp(vehicleTyp)).willReturn(false);
+        given(testPlanRepo.existsByTestLocation(testLocation)).willReturn(true);
+
+        //when
+        //then
+        assertThatThrownBy(
+                () -> testPlanServiceImplUnderTest.getTestPlansBasedOnVehicleTypAndTestLocation(
+                        vehicleTyp, testLocation
+                ))
+                .isInstanceOf(VehicleNotFoundException.class)
+                .hasMessageContaining("Given Vehicle Typ does not exist");
+
+        verify(testPlanRepo, never()).findTestPlansBasedOnVehicleTypAndTestLocation(
+                any(), any()
+        );
+    }
+
+    @Test
+    void shouldThrowTestPlanNotFoundExceptionWhenTestLocationDoesNotExist() {
+        //given
+        String testLocation = "IBN3";
+        String vehicleTyp = "Vehicle 1";
+        given(vehicleRepo.existsByVehicleTyp(vehicleTyp)).willReturn(true);
+        given(testPlanRepo.existsByTestLocation(testLocation)).willReturn(false);
+
+        //when
+        //then
+        assertThatThrownBy(
+                () -> testPlanServiceImplUnderTest.getTestPlansBasedOnVehicleTypAndTestLocation(
+                        vehicleTyp, testLocation
+                ))
+                .isInstanceOf(TestPlanNotFoundException.class)
+                .hasMessageContaining("Given Test Location does not exist.");
+
+        verify(testPlanRepo, never()).findTestPlansBasedOnVehicleTypAndTestLocation(
+                any(), any()
+        );
+    }
+
+    @Test
+    void shouldGetTestPlansBasedOnVehicleTypAndTestLocation() {
+        //given
+        String testLocation = "IBN3";
+        String vehicleTyp = "Vehicle 1";
+        given(vehicleRepo.existsByVehicleTyp(vehicleTyp)).willReturn(true);
+        given(testPlanRepo.existsByTestLocation(testLocation)).willReturn(true);
+
+        //when
+        //then
+        assertThatCode(
+                () -> testPlanServiceImplUnderTest.getTestPlansBasedOnVehicleTypAndTestLocation(
+                        vehicleTyp, testLocation
+                ))
+                .doesNotThrowAnyException();
+
+        verify(testPlanRepo).findTestPlansBasedOnVehicleTypAndTestLocation(
+                any(), any()
+        );
     }
 
 
