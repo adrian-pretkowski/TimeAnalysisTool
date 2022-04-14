@@ -1,0 +1,561 @@
+------------------------TIME ANALYSIS TOOL-----------------------------
+Test date: '2022-01-19 10:38:51'
+Vehicle VIN: 'WV1ZZZSKZNX035307'
+Vehicle typ: 'SBAA34'
+Vehicle data: 02    2KASD SBAA34 B4B4BSX11   202235202203135237 35202203135237SG1M001488001488WV1ZZZSKZNX035307    DS2     B07                                                                                                                                                                                             01E 02A 0ED 0F5 0K0 0NB 0TA 0VV 0Y3 0YB 0Z0 1AQ 1D1 1E9 1EV 1G8 1HZ 1KE 1N3 1NC 1PA 1SA 1T0 1U8 1X0 1Z2 1ZE 2DL 2FD 2H0 2JB 2P0 2WA 3B0 3CF 3D2 3FA 3H0 3JA 3LD 3PU 3QT 3RD 3S6 3U0 3W4 3ZA 4A3 4BJ 4DA 4EA 4FA 4G0 4GF 4H0 4HI 4I7 4JA 4L6 4S2 4U0 4UF 4X3 4Z3 51A 5AC 5BA 5DC 5EV 5F1 5K0 5KS 5Q0 5R2 6A0 6DE 6EP 6FF 6I0 6LG 6Q2 6SA 6U1 6XN 7AA 7B3 7E0 7K0 7L6 7M5 7N1 7P7 7Q0 7TC 7X1 7Y0 8FA 8G1 8GU 8ID 8J1 8M0 8N6 8Q1 8QJ 8RE 8SA 8T6 8U0 8WA 8X7 8Z5 9A0 9CU 9D0 9I5 9JA 9KA 9M9 9P3 9S5 9T1 9WT 9Z0 9ZX A9L AV1 B07 B0H C06 C0E DS2 E0A EJ1 EL2 EM1 ER1 EW0 F0A FM0 G02 G0K GW0 I8Q IA0 IG0 II0 IM0 IN1 IS0 J2D J68 K4A KA2 KH6 KK3 L0L L30 N0L NY0 NZ2 Q1A QE0 QG1 QH0 QI6 QK1 QL3 QN0 QR8 QV0 T6M U5A U9B UC7 V0A VF0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            9952022ACC0000FWS0041MKBDTRFMOTODS2NOT0000SEQ1488SWS0011TNK2103                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         SZ0105L906023ADSZ02V03935347HQSZ03V03935026PESZ04V03935005NSSZ055WA614517BLSZ06V03935350D SZ135WA907727ABSZ14V03935344JLSZ155WA937086L SZ16V03935361CASZ175Q0955559C SZ18V03935320UASZ2C5Q1953507EBSZ2DV03935034BXSZ395WA907572B SZ40V03935354BYSZ431EA959655DBSZ44V03935347TCSZ472K7920741A SZ48V03935345EPSZ495WA963272C SZ50V03935331ZHSZ515WA907530F SZ52V03935360Q SZ5AV03935031NZSZ5BV03935031BUSZ5CV03935031BVSZ5DV03935031BWSZ5EV03935031BXSZ5FV03935031BYSZ5GV03935031BZSZ5HV03935031C SZ5IV03935031CASZ5JV03935031CBSZ61V03935028BLSZ62V03935030XFSZ63V03935029KESZ64V03935029KGSZ655Q4959393P SZ66V03935344WLSZ715Q4959392P SZ72V03935344YWSZ7OV03935031B SZ7PV03935031BASZ85V03935031QASZ86V03935031QBSZ915H0907383  SZ92V03935308NTSZ935WA980556D SZ94V03935343SJSZ95V03935030ZYSZ96V03935030ZZSZ9FV03935031DPSZ9GV03935031DRSZA55H0941193AFSZA6V03935033FMSZAGV03935031BDSZAHV03935031BESZAI2K7959753F SZAJV03935034BRSZAMV03935031BFSZANV03935031BGSZAQ5WA915181C SZARV03935031AKSZB0V03935031APSZB1V03935031ANSZB8V03935031AASZB9V03935031ABSZBC5R3907146A SZBDV03935347P SZBY5H0959561AASZBZV03935013LWSZC65H0035867B SZC7V03935357GKSZCE5WA919283C SZCFV03935346CYSZCG3G0959442AASZCHV03935343VESZDQ2Q0905861B SZDRV03935336NFSZEI5WA909059K SZEJV03935353AKSZEW5WA980653C SZEXV03935357LJSZEY5WA035284C SZEZV03935360TKSZGW5WA959436H SZGXV03935351JQSZH2V03935031ACSZH3V03935031ADSZHQV03935030XGSZHRV03935030XHSZIU3Q0963513A SZIVV03935031AFSZKUV03935031BPSZKVV03935031BQSZKWV03935031BRSZKXV03935031BSSZM25H0925200AASZM3V03935032JCSZMMV03935031ALSZMNV03935031AMSZPMV03935031BKSZPNV03935031BLSZZ0V03959108JMSZZ1V03959107NRSZZ5V03959001GL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+Current TestPlan: 'TP_ML5'
+2022-01-19 10:38:51.224 MAGIC LOG FILEMAKER Start with KNR: '35202203135237'
+------------------------TIME ANALYSIS TOOL-----------------------------
+2022-01-19 10:38:51.467 - BCM_1: TM_GENERIC_ConnectionOpen '0,24' s (BCM_1: 1020b7d8)
+2022-01-19 10:38:51.537 - BCM_1: TM_0009_BCM_1_IgnitionON '0,06' s (BCM_1: 1020b7d8)
+2022-01-19 10:38:51.583 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:38:51.811 - GW: TM_GENERIC_ConnectionOpen '0,22' s (GW: a9a3268)
+2022-01-19 10:38:52.416 - GW: TM_GENERIC_AssemblyCheck '0,6' s (GW: a9a3268)
+2022-01-19 10:38:52.950 - GW: TM_GENERIC_CheckSFDIsUnlocked '0,52' s (GW: a9a3268)
+2022-01-19 10:38:52.997 - GW: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:38:53.252 - EBKV: TM_GENERIC_ConnectionOpen '0,24' s (EBKV: a9a3268)
+2022-01-19 10:38:53.302 - MU: TM_GENERIC_ConnectionOpen '0,28' s (MU: 9ed75d0)
+2022-01-19 10:38:53.302 - BCM_1: TM_GENERIC_ConnectionOpen '0,29' s (BCM_1: afc1aa0)
+2022-01-19 10:38:53.304 - AIRBAG: TM_GENERIC_ConnectionOpen '0,29' s (AIRBAG: a125fc0)
+2022-01-19 10:38:53.848 - EBKV: TM_GENERIC_AssemblyCheck '0,58' s (EBKV: a9a3268)
+2022-01-19 10:38:53.887 - AIRBAG: TM_GENERIC_AssemblyCheck '0,56' s (AIRBAG: a125fc0)
+2022-01-19 10:38:53.898 - MU: TM_GENERIC_AssemblyCheck '0,57' s (MU: 9ed75d0)
+2022-01-19 10:38:54.042 - BCM_1: TM_GENERIC_AssemblyCheck '0,71' s (BCM_1: afc1aa0)
+2022-01-19 10:38:54.389 - EBKV: TM_GENERIC_CheckSFDIsUnlocked '0,53' s (EBKV: a9a3268)
+2022-01-19 10:38:54.430 - MU: TM_GENERIC_CheckSFDIsUnlocked '0,52' s (MU: 9ed75d0)
+2022-01-19 10:38:54.430 - AIRBAG: TM_GENERIC_CheckSFDIsUnlocked '0,53' s (AIRBAG: a125fc0)
+2022-01-19 10:38:54.452 - EBKV: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:38:54.545 - MU: TM_GENERIC_ConnectionRelease '0,09' s
+2022-01-19 10:38:54.576 - AIRBAG: TM_GENERIC_ConnectionRelease '0,12' s
+2022-01-19 10:38:54.596 - BCM_1: TM_GENERIC_CheckSFDIsUnlocked '0,54' s (BCM_1: afc1aa0)
+2022-01-19 10:38:54.690 - BCM_1: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:38:54.790 - ESP: TM_GENERIC_ConnectionOpen '0,32' s (ESP: a9a3268)
+2022-01-19 10:38:54.820 - MSG_1: TM_GENERIC_ConnectionOpen '0,26' s (MSG_1: b53b6a8)
+2022-01-19 10:38:54.888 - KOMBI: TM_GENERIC_ConnectionOpen '0,19' s (KOMBI: a7e6c30)
+2022-01-19 10:38:55.131 - MSG_1: TM_GENERIC_AssemblyCheck '0,3' s (MSG_1: b53b6a8)
+2022-01-19 10:38:55.219 - NRM: TM_GENERIC_ConnectionOpen '0,63' s (NRM: 91406c8)
+2022-01-19 10:38:55.291 - MSG_1: TM_GENERIC_ConnectionRelease '0,13' s
+2022-01-19 10:38:55.498 - ESP: TM_GENERIC_AssemblyCheck '0,7' s (ESP: a9a3268)
+2022-01-19 10:38:55.562 - KOMBI: TM_GENERIC_AssemblyCheck '0,67' s (KOMBI: a7e6c30)
+2022-01-19 10:38:55.683 - NRM: TM_GENERIC_AssemblyCheck '0,45' s (NRM: 91406c8)
+2022-01-19 10:38:56.029 - ESP: TM_GENERIC_CheckSFDIsUnlocked '0,52' s (ESP: a9a3268)
+2022-01-19 10:38:56.077 - ESP: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:38:56.099 - KOMBI: TM_GENERIC_CheckSFDIsUnlocked '0,52' s (KOMBI: a7e6c30)
+2022-01-19 10:38:56.147 - KOMBI: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:38:56.219 - NRM: TM_GENERIC_CheckSFDIsUnlocked '0,52' s (NRM: 91406c8)
+2022-01-19 10:38:56.270 - NRM: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:39:03.255 - FAZIT: TM_0000_FAZIT_Send_F_PIN_to_FAZIT '11,66' s
+2022-01-19 10:39:03.767 - FAZIT: TM_0000_FAZIT_KS_Request '0,5' s
+2022-01-19 10:39:04.021 - MSG_1: TM_GENERIC_ConnectionOpen '0,24' s (MSG_1: f935650)
+2022-01-19 10:39:04.050 - NRM: TM_GENERIC_ConnectionOpen '0,25' s (NRM: c7f7c30)
+2022-01-19 10:39:04.077 - BCM_1: TM_GENERIC_ConnectionOpen '0,29' s (BCM_1: 884f3a0)
+2022-01-19 10:39:04.413 - MSG_1: TM_GENERIC_AssemblyCheck '0,38' s (MSG_1: f935650)
+2022-01-19 10:39:04.504 - NRM: TM_GENERIC_AssemblyCheck '0,43' s (NRM: c7f7c30)
+2022-01-19 10:39:04.735 - MSG_1: TM_GENERIC_WFSRequestSecret '0,3' s (MSG_1: f935650)
+2022-01-19 10:39:04.799 - MSG_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:04.846 - BCM_1: TM_GENERIC_AssemblyCheck '0,75' s (BCM_1: 884f3a0)
+2022-01-19 10:39:05.058 - ELV: TM_GENERIC_ConnectionOpen '0,25' s (ELV: d914570)
+2022-01-19 10:39:05.494 - BCM_1: TM_0009_BCM_1_DT01_Anfrage '0,63' s (BCM_1: 884f3a0)
+2022-01-19 10:39:05.520 - ELV: TM_GENERIC_AssemblyCheck '0,45' s (ELV: d914570)
+2022-01-19 10:39:05.629 - BCM_1: TM_GENERIC_WFSRequestSecret '0,13' s (BCM_1: 884f3a0)
+2022-01-19 10:39:05.692 - BCM_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:05.728 - ELV: TM_GENERIC_WFSRequestSecret '0,2' s (ELV: d914570)
+2022-01-19 10:39:05.794 - ELV: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:05.969 - NRM: TM_GENERIC_WFSRequestSecret '1,45' s (NRM: c7f7c30)
+2022-01-19 10:39:06.024 - NRM: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:06.222 - GW: TM_GENERIC_ConnectionOpen '0,19' s (GW: 848b720)
+2022-01-19 10:39:06.792 - GW: TM_GENERIC_AssemblyCheck '0,56' s (GW: 848b720)
+2022-01-19 10:39:08.082 - GW: TM_GENERIC_KSRequestKOMP '1,28' s (GW: 848b720)
+2022-01-19 10:39:08.322 - GW: TM_0019_GW_FoDRequestActivation '0,23' s (GW: 848b720)
+2022-01-19 10:39:08.395 - GW: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:08.599 - KOMBI: TM_GENERIC_ConnectionOpen '0,19' s (KOMBI: 848b720)
+2022-01-19 10:39:08.600 - MU: TM_GENERIC_ConnectionOpen '0,19' s (MU: f8c13a0)
+2022-01-19 10:39:08.933 - MU: TM_GENERIC_AssemblyCheck '0,31' s (MU: f8c13a0)
+2022-01-19 10:39:09.192 - KOMBI: TM_GENERIC_AssemblyCheck '0,57' s (KOMBI: 848b720)
+2022-01-19 10:39:10.301 - MU: TM_005F_MU_KSRequestKOMP '1,36' s (MU: f8c13a0)
+2022-01-19 10:39:10.574 - MU: TM_005F_MU_FoDRequestActivation '0,27' s (MU: f8c13a0)
+2022-01-19 10:39:10.658 - MU: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:39:11.547 - KOMBI: TM_GENERIC_KSRequestKOMP '2,35' s (KOMBI: 848b720)
+2022-01-19 10:39:11.603 - KOMBI: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:11.780 - EBKV: TM_GENERIC_ConnectionOpen '0,17' s (EBKV: a05bba8)
+2022-01-19 10:39:12.192 - EBKV: TM_0023_EBKV_ProductionModeActivate '0,4' s (EBKV: a05bba8)
+2022-01-19 10:39:12.243 - EBKV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:39:12.432 - GW: TM_GENERIC_ConnectionOpen '0,18' s (GW: a05bba8)
+2022-01-19 10:39:12.690 - GW: TM_0019_GW_CentralProductionModeActivate '0,25' s (GW: a05bba8)
+2022-01-19 10:39:12.757 - GW: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:12.939 - BCM_1: TM_GENERIC_ConnectionOpen '0,17' s (BCM_1: adfa358)
+2022-01-19 10:39:13.268 - BCM_1: TM_GENERIC_WFSUnlock '0,32' s (BCM_1: adfa358)
+2022-01-19 10:39:13.313 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:39:13.527 - MSG_1: TM_GENERIC_ConnectionOpen '0,2' s (MSG_1: be96b60)
+2022-01-19 10:39:13.576 - NRM: TM_GENERIC_ConnectionOpen '0,25' s (NRM: 1083ad00)
+2022-01-19 10:39:13.613 - ELV: TM_GENERIC_ConnectionOpen '0,28' s (ELV: a6dd9c8)
+2022-01-19 10:39:13.898 - ELV: TM_GENERIC_WFSUnlock '0,27' s (ELV: a6dd9c8)
+2022-01-19 10:39:13.966 - ELV: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:14.526 - NRM: TM_GENERIC_WFSUnlock '0,94' s (NRM: 1083ad00)
+2022-01-19 10:39:14.575 - NRM: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:39:15.149 - MSG_1: TM_GENERIC_WFSUnlock '1,61' s (MSG_1: be96b60)
+2022-01-19 10:39:15.206 - MSG_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:15.391 - GW: TM_GENERIC_ConnectionOpen '0,18' s (GW: 10bdda48)
+2022-01-19 10:39:15.961 - GW: TM_GENERIC_AssemblyCheck '0,56' s (GW: 10bdda48)
+2022-01-19 10:39:18.154 - GW: TM_0019_GW_KSUnlock '2,18' s (GW: 10bdda48)
+2022-01-19 10:39:18.208 - GW: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:18.462 - KOMBI: TM_GENERIC_ConnectionOpen '0,22' s (KOMBI: ac807f0)
+2022-01-19 10:39:18.473 - ADR: TM_GENERIC_ConnectionOpen '0,26' s (ADR: a1d3460)
+2022-01-19 10:39:18.498 - FR_FAS: TM_GENERIC_ConnectionOpen '0,23' s (FR_FAS: c023900)
+2022-01-19 10:39:18.993 - KOMBI: TM_GENERIC_AssemblyCheck '0,51' s (KOMBI: ac807f0)
+2022-01-19 10:39:19.005 - ADR: TM_GENERIC_AssemblyCheck '0,51' s (ADR: a1d3460)
+2022-01-19 10:39:19.103 - FR_FAS: TM_GENERIC_AssemblyCheck '0,59' s (FR_FAS: c023900)
+2022-01-19 10:39:20.731 - KOMBI: TM_0017_KOMBI_KSUnlock '1,72' s (KOMBI: ac807f0)
+2022-01-19 10:39:20.798 - KOMBI: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:20.956 - MU: TM_GENERIC_ConnectionOpen '0,15' s (MU: 8fd73f8)
+2022-01-19 10:39:21.221 - FR_FAS: TM_00A5_FR_FAS_KSUnlock '2,11' s (FR_FAS: c023900)
+2022-01-19 10:39:21.296 - FR_FAS: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:21.324 - MU: TM_GENERIC_AssemblyCheck '0,36' s (MU: 8fd73f8)
+2022-01-19 10:39:21.915 - ADR: TM_0013_ADR_KSUnlock '2,89' s (ADR: a1d3460)
+2022-01-19 10:39:22.007 - ADR: TM_GENERIC_ConnectionRelease '0,08' s
+2022-01-19 10:39:22.156 - AIRBAG: TM_GENERIC_ConnectionOpen '0,14' s (AIRBAG: b989710)
+2022-01-19 10:39:22.645 - AIRBAG: TM_GENERIC_AssemblyCheck '0,48' s (AIRBAG: b989710)
+2022-01-19 10:39:23.359 - MU: TM_005F_MU_KSUnlock '2,03' s (MU: 8fd73f8)
+2022-01-19 10:39:23.688 - AIRBAG: TM_0015_AIRBAG_KS_Unlock '1,03' s (AIRBAG: b989710)
+2022-01-19 10:39:23.747 - AIRBAG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:23.973 - BCM_1: TM_GENERIC_ConnectionOpen '0,22' s (BCM_1: b5c8a00)
+2022-01-19 10:39:24.467 - MU: TM_GENERIC_DTCClear '1,1' s (MU: 8fd73f8)
+2022-01-19 10:39:24.535 - MU: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:24.599 - BCM_1: TM_GENERIC_AssemblyCheck '0,62' s (BCM_1: b5c8a00)
+2022-01-19 10:39:29.218 - BCM_1: TM_0009_BCM_1_KSUnlock '4,61' s (BCM_1: b5c8a00)
+2022-01-19 10:39:29.275 - BCM_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:29.482 - GW: TM_GENERIC_ConnectionOpen '0,19' s (GW: 8e28be8)
+2022-01-19 10:39:33.194 - GW: TM_0019_GWA_KSRegisterKomponents '3,7' s (GW: 8e28be8)
+2022-01-19 10:39:33.278 - GW: TM_GENERIC_ConnectionRelease '0,08' s
+2022-01-19 10:39:33.517 - BCM_1: TM_GENERIC_ConnectionOpen '0,22' s (BCM_1: a3707e0)
+2022-01-19 10:39:33.603 - IZS: TM_GENERIC_ConnectionOpen '0,32' s (IZS: 8e28be8)
+2022-01-19 10:39:56.708 - IZS: TM_00B7_KESSY_IO_B0x_Temperatur '23,1' s (IZS: 8e28be8)
+2022-01-19 10:39:56.778 - IZS: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:39:57.228 - BCM_1: TM_0009_BCM_1_KeyLearn_Kessy '23,7' s (BCM_1: a3707e0)
+2022-01-19 10:39:57.287 - BCM_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:39:57.480 - NRM: TM_GENERIC_ConnectionOpen '0,18' s (NRM: d91b580)
+2022-01-19 10:39:58.034 - NRM: TM_GENERIC_AssemblyCheck '0,55' s (NRM: d91b580)
+2022-01-19 10:39:59.896 - NRM: TM_GENERIC_VKMSECUUnlock '1,85' s (NRM: d91b580)
+2022-01-19 10:40:00.046 - NRM: TM_GENERIC_VKMSCheck '0,14' s (NRM: d91b580)
+2022-01-19 10:40:00.103 - NRM: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:40:00.302 - GW: TM_GENERIC_ConnectionOpen '0,19' s (GW: f7e3000)
+2022-01-19 10:40:00.893 - GW: TM_GENERIC_AssemblyCheck '0,58' s (GW: f7e3000)
+2022-01-19 10:40:01.676 - GW: TM_GENERIC_VKMSECUUnlock '0,77' s (GW: f7e3000)
+2022-01-19 10:40:01.911 - GW: TM_GENERIC_VKMSCheck '0,22' s (GW: f7e3000)
+2022-01-19 10:40:01.964 - GW: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:40:02.158 - BCM_1: TM_GENERIC_ConnectionOpen '0,19' s (BCM_1: bd9e5c8)
+2022-01-19 10:40:02.757 - BCM_1: TM_GENERIC_AssemblyCheck '0,59' s (BCM_1: bd9e5c8)
+2022-01-19 10:40:03.565 - BCM_1: TM_GENERIC_VKMSECUUnlock '0,8' s (BCM_1: bd9e5c8)
+2022-01-19 10:40:03.766 - BCM_1: TM_GENERIC_VKMSCheck '0,19' s (BCM_1: bd9e5c8)
+2022-01-19 10:40:03.815 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:40:03.966 - KOMBI: TM_GENERIC_ConnectionOpen '0,14' s (KOMBI: f92f6d0)
+2022-01-19 10:40:04.486 - KOMBI: TM_GENERIC_AssemblyCheck '0,51' s (KOMBI: f92f6d0)
+2022-01-19 10:40:05.458 - KOMBI: TM_GENERIC_VKMSECUUnlock '0,96' s (KOMBI: f92f6d0)
+2022-01-19 10:40:05.633 - KOMBI: TM_GENERIC_VKMSCheck '0,17' s (KOMBI: f92f6d0)
+2022-01-19 10:40:05.685 - KOMBI: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:40:05.836 - MU: TM_GENERIC_ConnectionOpen '0,14' s (MU: 8438570)
+2022-01-19 10:40:06.178 - MU: TM_GENERIC_AssemblyCheck '0,33' s (MU: 8438570)
+2022-01-19 10:40:08.857 - MU: TM_005F_MU_VKMSECUUnlock '2,67' s (MU: 8438570)
+2022-01-19 10:40:09.377 - MU: TM_005F_MU_VKMSCheck '0,51' s (MU: 8438570)
+2022-01-19 10:40:09.422 - MU: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:40:09.569 - AIRBAG: TM_GENERIC_ConnectionOpen '0,14' s (AIRBAG: 102e5738)
+2022-01-19 10:40:09.620 - AIRBAG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:40:09.771 - ESP: TM_GENERIC_ConnectionOpen '0,14' s (ESP: 102e5738)
+2022-01-19 10:40:10.301 - ESP: TM_GENERIC_AssemblyCheck '0,52' s (ESP: 102e5738)
+2022-01-19 10:40:11.789 - ESP: TM_0003_ESP_EPBOpen '1,48' s (ESP: 102e5738)
+2022-01-19 10:40:14.779 - ESP: TM_0003_ESP_DTCClear_OBD '2,98' s (ESP: 102e5738)
+2022-01-19 10:40:14.828 - ESP: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:40:14.997 - EBKV: TM_GENERIC_ConnectionOpen '0,16' s (EBKV: 102e5738)
+2022-01-19 10:40:15.002 - MSG_1: TM_GENERIC_ConnectionOpen '0,16' s (MSG_1: 1040f300)
+2022-01-19 10:40:15.375 - EBKV: TM_GENERIC_AssemblyCheck '0,37' s (EBKV: 102e5738)
+2022-01-19 10:40:15.442 - MSG_1: TM_GENERIC_AssemblyCheck '0,41' s (MSG_1: 1040f300)
+2022-01-19 10:40:15.976 - EBKV: TM_0023_EBKV_BrakeBoosterSensor '0,59' s (EBKV: 102e5738)
+2022-01-19 10:40:16.631 - MSG_1: TM_0001_MSG_1_ZDCConfiguration '1,18' s (MSG_1: 1040f300)
+2022-01-19 10:40:16.666 - MSG_1: TM_0001_MSG_1_EOLSession '0,03' s (MSG_1: 1040f300)
+2022-01-19 10:40:16.872 - MSG_1: TM_0001_MSG_1_SecurityAccess_WMP '0,2' s (MSG_1: 1040f300)
+2022-01-19 10:40:18.450 - MSG_1: TM_0001_MSG_1_AdjustmentInjector '1,57' s (MSG_1: 1040f300)
+2022-01-19 10:40:18.814 - MSG_1: TM_0001_MSG_1_AdaptionValueOfCamshaftPosition_onlyEU6 '0,35' s (MSG_1: 1040f300)
+2022-01-19 10:40:19.099 - MSG_1: TM_0001_MSG_1_FirstFillingOfFuelSystem '0,28' s (MSG_1: 1040f300)
+2022-01-19 10:40:19.164 - MSG_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:40:26.177 - EBKV: TM_0023_EBKV_TorqueTest '10,19' s (EBKV: 102e5738)
+2022-01-19 10:41:04.235 - EBKV: TM_0023_EBKV_LeakageTest '38,05' s (EBKV: 102e5738)
+2022-01-19 10:41:04.274 - EBKV: TM_0023_EBKV_SystemStateBrakeBooster '0,03' s (EBKV: 102e5738)
+2022-01-19 10:41:04.318 - EBKV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:41:04.567 - AAG: TM_GENERIC_ConnectionOpen '0,24' s (AAG: a4840b0)
+2022-01-19 10:41:04.999 - AAG: TM_GENERIC_AssemblyCheck '0,43' s (AAG: a4840b0)
+2022-01-19 10:41:05.306 - AAG: TM_0069_AAG_ProductionModeActivate '0,3' s (AAG: a4840b0)
+2022-01-19 10:41:19.016 - AAG: TM_0069_AAG_ZDCConfiguration '13,7' s (AAG: a4840b0)
+2022-01-19 10:41:19.076 - AAG: TM_GENERIC_DTCClear '0,05' s (AAG: a4840b0)
+2022-01-19 10:41:19.123 - AAG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:41:19.444 - UDS: TM_GENERIC_ConnectionOpen '0,31' s (UDS: c6e1d98)
+2022-01-19 10:41:19.935 - UDS: TM_0000_UDS_PreSequence '0,48' s (UDS: c6e1d98)
+2022-01-19 10:41:19.978 - UDS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:41:22.144 - RV: TM_GENERIC_ConnectionOpen '0,15' s (RV: 9051eb8)
+2022-01-19 10:41:22.198 - RV: TM_006C_RV_EOL '0,04' s (RV: 9051eb8)
+2022-01-19 10:41:22.504 - RV: TM_GENERIC_AssemblyCheck '0,3' s (RV: 9051eb8)
+2022-01-19 10:41:27.552 - RV: TM_006C_RV_DTCQualificationTime '5,03' s (RV: 9051eb8)
+2022-01-19 10:41:49.557 - RV: TM_006C_RV_ZDCConfiguration '21,99' s (RV: 9051eb8)
+2022-01-19 10:41:49.617 - RV: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:41:49.951 - PDC: TM_GENERIC_ConnectionOpen '0,27' s (PDC: be4e4d0)
+2022-01-19 10:41:49.961 - TSG_FS: TM_GENERIC_ConnectionOpen '0,26' s (TSG_FS: 1014f058)
+2022-01-19 10:41:50.019 - LDS: TM_GENERIC_ConnectionOpen '0,39' s (LDS: 87e4580)
+2022-01-19 10:41:50.031 - STHZG: TM_GENERIC_ConnectionOpen '0,38' s (STHZG: d9e4ef8)
+2022-01-19 10:41:50.443 - TSG_FS: TM_GENERIC_AssemblyCheck '0,47' s (TSG_FS: 1014f058)
+2022-01-19 10:41:50.498 - PDC: TM_GENERIC_AssemblyCheck '0,53' s (PDC: be4e4d0)
+2022-01-19 10:41:50.618 - STHZG: TM_GENERIC_AssemblyCheck '0,55' s (STHZG: d9e4ef8)
+2022-01-19 10:41:51.606 - LDS: TM_GENERIC_AssemblyCheckSlave '1,57' s (LDS: 87e4580)
+2022-01-19 10:41:52.298 - LDS: TM_GENERIC_ConnectionRelease '0,68' s
+2022-01-19 10:41:52.564 - BFK: TM_GENERIC_ConnectionOpen '0,25' s (BFK: ade1600)
+2022-01-19 10:41:53.316 - STHZG: TM_0018_STHZG_ZDCConfiguration '2,66' s (STHZG: d9e4ef8)
+2022-01-19 10:41:53.388 - STHZG: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:41:53.568 - BFK: TM_GENERIC_AssemblyCheckSlave '0,99' s (BFK: ade1600)
+2022-01-19 10:41:53.639 - BFK: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:41:53.730 - FFB_STHZG: TM_GENERIC_ConnectionOpen '0,33' s (FFB_STHZG: a13c7f8)
+2022-01-19 10:41:53.924 - ILM: TM_GENERIC_ConnectionOpen '0,27' s (ILM: 8db1fc8)
+2022-01-19 10:41:54.616 - ILM: TM_GENERIC_AssemblyCheckSlave '0,69' s (ILM: 8db1fc8)
+2022-01-19 10:41:54.670 - ILM: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:41:54.954 - RL: TM_GENERIC_ConnectionOpen '0,28' s (RL: d4c6c68)
+2022-01-19 10:41:55.177 - FFB_STHZG: TM_GENERIC_AssemblyCheckSlave '1,44' s (FFB_STHZG: a13c7f8)
+2022-01-19 10:41:55.247 - FFB_STHZG: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:41:55.448 - IZS: TM_GENERIC_ConnectionOpen '0,19' s (IZS: a13c7f8)
+2022-01-19 10:41:55.873 - IZS: TM_GENERIC_AssemblyCheck '0,42' s (IZS: a13c7f8)
+2022-01-19 10:41:55.969 - RL: TM_GENERIC_AssemblyCheckSlave '1,01' s (RL: d4c6c68)
+2022-01-19 10:41:56.810 - RL: TM_0602_RL_ZDCConfiguration '0,83' s (RL: d4c6c68)
+2022-01-19 10:41:56.888 - RL: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:41:57.174 - SMLS_LIN: TM_GENERIC_ConnectionOpen '0,27' s (SMLS_LIN: a073418)
+2022-01-19 10:41:58.132 - SMLS_LIN: TM_GENERIC_AssemblyCheckSlave '0,95' s (SMLS_LIN: a073418)
+2022-01-19 10:41:58.193 - SMLS_LIN: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:42:02.651 - PDC: TM_0076_PDC_ZDCConfiguration '12,14' s (PDC: be4e4d0)
+2022-01-19 10:42:02.700 - PDC: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:42:04.099 - TSG_FS: TM_0042_TSG_FS_ZDCConfiguration '13,65' s (TSG_FS: 1014f058)
+2022-01-19 10:42:04.147 - TSG_FS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:42:04.326 - TSG_BS: TM_GENERIC_ConnectionOpen '0,17' s (TSG_BS: bbeb760)
+2022-01-19 10:42:04.655 - TSG_BS: TM_GENERIC_AssemblyCheck '0,32' s (TSG_BS: bbeb760)
+2022-01-19 10:42:17.602 - TSG_BS: TM_0052_TSG_BS_ZDCConfiguration '12,94' s (TSG_BS: bbeb760)
+2022-01-19 10:42:17.660 - TSG_BS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:42:20.135 - IZS: TM_00B7_KESSY_ZDCConfiguration '24,25' s (IZS: a13c7f8)
+2022-01-19 10:42:20.197 - IZS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:42:20.260 - UDS: TM_GENERIC_ConnectionOpen '0,05' s (UDS: c6e1d98)
+2022-01-19 10:42:20.714 - UDS: TM_0000_UDS_PostSequence '0,44' s (UDS: c6e1d98)
+2022-01-19 10:42:34.710 - UDS: TM_GENERIC_DTCClear '13,99' s (UDS: c6e1d98)
+2022-01-19 10:42:34.754 - UDS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:42:34.901 - ADR: TM_GENERIC_ConnectionOpen '0,14' s (ADR: a706c28)
+2022-01-19 10:42:35.244 - ADR: TM_GENERIC_AssemblyCheck '0,34' s (ADR: a706c28)
+2022-01-19 10:42:46.511 - ADR: TM_0013_ADR_ZDCConfiguration '11,26' s (ADR: a706c28)
+2022-01-19 10:42:46.810 - ADR: TM_GENERIC_DTCClear '0,29' s (ADR: a706c28)
+2022-01-19 10:42:46.856 - ADR: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:42:46.991 - MSG_1: TM_GENERIC_ConnectionOpen '0,13' s (MSG_1: fd42258)
+2022-01-19 10:42:47.910 - MSG_1: TM_GENERIC_DTCClearOBD '0,91' s (MSG_1: fd42258)
+2022-01-19 10:42:47.961 - MSG_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:42:48.122 - FR_FAS: TM_GENERIC_ConnectionOpen '0,15' s (FR_FAS: 10b357d0)
+2022-01-19 10:42:48.515 - FR_FAS: TM_GENERIC_AssemblyCheck '0,38' s (FR_FAS: 10b357d0)
+2022-01-19 10:43:09.528 - FR_FAS: TM_00A5_FR_FAS_ZDCConfiguration '21' s (FR_FAS: 10b357d0)
+2022-01-19 10:43:09.583 - FR_FAS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:09.797 - MFL: TM_GENERIC_ConnectionOpen '0,2' s (MFL: baed668)
+2022-01-19 10:43:10.039 - MFL: TM_GENERIC_AssemblyCheckSlave '0,23' s (MFL: baed668)
+2022-01-19 10:43:10.271 - MFL: TM_0631_MFL_ZDCConfiguration '0,22' s (MFL: baed668)
+2022-01-19 10:43:10.322 - MFL: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:10.527 - BDM: TM_GENERIC_ConnectionOpen '0,2' s (BDM: baed668)
+2022-01-19 10:43:12.548 - BDM: TM_0637_BDM_WaitTime '2,01' s (BDM: baed668)
+2022-01-19 10:43:12.807 - BDM: TM_GENERIC_AssemblyCheckSlave '0,25' s (BDM: baed668)
+2022-01-19 10:43:12.868 - BDM: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:13.122 - ESP: TM_GENERIC_ConnectionOpen '0,25' s (ESP: 107cefa0)
+2022-01-19 10:43:13.147 - TSG_FS: TM_GENERIC_ConnectionOpen '0,26' s (TSG_FS: 104cfcd0)
+2022-01-19 10:43:13.162 - BCM_1: TM_GENERIC_ConnectionOpen '0,28' s (BCM_1: be242e8)
+2022-01-19 10:43:13.205 - TSG_FS: TM_GENERIC_DTCClear '0,03' s (TSG_FS: 104cfcd0)
+2022-01-19 10:43:13.407 - STHZG: TM_GENERIC_ConnectionOpen '0,48' s (STHZG: d11fee0)
+2022-01-19 10:43:13.448 - STHZG: TM_GENERIC_DTCClear '0,03' s (STHZG: d11fee0)
+2022-01-19 10:43:13.516 - STHZG: TM_0018_STHZG_FuelLevelInputHeater '0,05' s (STHZG: d11fee0)
+2022-01-19 10:43:13.591 - STHZG: TM_0018_STHZG_InitialisationAtFirstState '0,06' s (STHZG: d11fee0)
+2022-01-19 10:43:13.634 - STHZG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:13.779 - MU: TM_GENERIC_ConnectionOpen '0,14' s (MU: fcb5a00)
+2022-01-19 10:43:13.968 - MU: TM_005F_MU_ComponentUpdateConfirmation '0,18' s (MU: fcb5a00)
+2022-01-19 10:43:14.128 - BCM_1: TM_GENERIC_DTCClear '0,95' s (BCM_1: be242e8)
+2022-01-19 10:43:14.237 - MU: TM_GENERIC_DTCClear '0,26' s (MU: fcb5a00)
+2022-01-19 10:43:14.446 - MU: TM_005F_MU_AutomotiveAudioBus '0,2' s (MU: fcb5a00)
+2022-01-19 10:43:14.493 - MU: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:14.896 - ESP: TM_0003_ESP_DTCClear_OBD '1,76' s (ESP: 107cefa0)
+2022-01-19 10:43:14.952 - ESP: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:15.535 - BCM_1: TM_0009_BCM_1_CentralLockingProtection '1,4' s (BCM_1: be242e8)
+2022-01-19 10:43:15.580 - BCM_1: TM_0009_BCM_1_ResetOfAdaptionValues '0,04' s (BCM_1: be242e8)
+2022-01-19 10:43:15.688 - BCM_1: TM_0009_BCM_1_DriverWarningIndicationsWasherFluid '0,09' s (BCM_1: be242e8)
+2022-01-19 10:43:15.752 - BCM_1: TM_0009_BCM_1_DriverWarningIndicationsBrakeAndCoolFluid '0,05' s (BCM_1: be242e8)
+2022-01-19 10:43:16.092 - MSG_1: TM_GENERIC_ConnectionOpen '0,13' s (MSG_1: aeedee8)
+2022-01-19 10:43:16.508 - TSG_FS: TM_0042_TSG_FS_IO_Contr_Window_Regulator '3,29' s (TSG_FS: 104cfcd0)
+2022-01-19 10:43:22.681 - MSG_1: TM_0001_MSG_1_SCRHeatingDevices '6,58' s (MSG_1: aeedee8)
+2022-01-19 10:43:24.281 - MSG_1: TM_0001_MSG_1_SCRHeatingDevices2 '1,59' s (MSG_1: aeedee8)
+2022-01-19 10:43:24.783 - TSG_FS: TM_0042_TSG_FS_IO_Contr_Normalisation_Window_Front '8,27' s (TSG_FS: 104cfcd0)
+2022-01-19 10:43:24.831 - TSG_FS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:24.978 - TSG_BS: TM_GENERIC_ConnectionOpen '0,14' s (TSG_BS: b1000a0)
+2022-01-19 10:43:25.006 - TSG_BS: TM_GENERIC_DTCClear '0,02' s (TSG_BS: b1000a0)
+2022-01-19 10:43:25.782 - MSG_1: TM_0001_MSG_1_SCRHeatingDevices3 '1,49' s (MSG_1: aeedee8)
+2022-01-19 10:43:28.081 - MSG_1: TM_0001_MSG_1_AdaptionOfReductantTankLevelSensing '2,28' s (MSG_1: aeedee8)
+2022-01-19 10:43:28.234 - MSG_1: TM_0001_MSG_1_PlausibilitaetLadedruck '0,14' s (MSG_1: aeedee8)
+2022-01-19 10:43:28.298 - TSG_BS: TM_0052_TSG_BS_IO_Contr_Window_Regulator '3,28' s (TSG_BS: b1000a0)
+2022-01-19 10:43:30.534 - MSG_1: TM_0001_MSG_1_PlausibilitaetAbgasTemperaturSensoren '2,29' s (MSG_1: aeedee8)
+2022-01-19 10:43:30.621 - MSG_1: TM_0001_MSG_1_ParticleFilterDifferentialPressureSensor1Bank1RawValue1 '0,08' s (MSG_1: aeedee8)
+2022-01-19 10:43:30.689 - MSG_1: TM_0001_MSG_1_ParticleFilterDifferentialPressureSensor1Bank1RawValue2 '0,06' s (MSG_1: aeedee8)
+2022-01-19 10:43:36.667 - TSG_BS: TM_0052_TSG_BS_IO_Contr_Normalisation_Window_Front '8,36' s (TSG_BS: b1000a0)
+2022-01-19 10:43:36.730 - TSG_BS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:36.896 - KOMBI: TM_GENERIC_ConnectionOpen '0,16' s (KOMBI: b9298f0)
+2022-01-19 10:43:37.995 - KOMBI: TM_0017_KOMBI_WriteDateAndTime '1,09' s (KOMBI: b9298f0)
+2022-01-19 10:43:38.044 - KOMBI: TM_GENERIC_DTCClear '0,04' s (KOMBI: b9298f0)
+2022-01-19 10:43:38.108 - KOMBI: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:38.110 - BCM_1: TM_0009_BCM_1_LightingTest '22,35' s (BCM_1: be242e8)
+2022-01-19 10:43:38.297 - BCM_1: TM_0009_BCM_1_TankFlapTest '0,18' s (BCM_1: be242e8)
+2022-01-19 10:43:39.879 - MSG_1: TM_0001_MSG_1_QuickStartAdaptionOfTurboCharger '9,18' s (MSG_1: aeedee8)
+2022-01-19 10:43:39.986 - MSG_1: TM_GENERIC_ConnectionRelease '0,1' s
+2022-01-19 10:43:40.156 - AIRBAG: TM_GENERIC_ConnectionOpen '0,16' s (AIRBAG: c523fa0)
+2022-01-19 10:43:40.437 - AIRBAG: TM_GENERIC_DTCClear '0,27' s (AIRBAG: c523fa0)
+2022-01-19 10:43:40.447 - BCM_1: TM_0009_BCM_1_WindowWasherTest '2,14' s (BCM_1: be242e8)
+2022-01-19 10:43:40.538 - BCM_1: TM_0009_BCM_1_VINCompare '0,08' s (BCM_1: be242e8)
+2022-01-19 10:43:40.583 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:40.787 - IZS: TM_GENERIC_ConnectionOpen '0,2' s (IZS: 104f9b80)
+2022-01-19 10:43:40.827 - IZS: TM_GENERIC_DTCClear '0,03' s (IZS: 104f9b80)
+2022-01-19 10:43:40.889 - IZS: TM_00B7_KESSY_VINCompare '0,05' s (IZS: 104f9b80)
+2022-01-19 10:43:40.935 - IZS: TM_00B7_KESSY_ResetDoorControlSections '0,04' s (IZS: 104f9b80)
+2022-01-19 10:43:41.473 - IZS: TM_00B7_KESSY_ArialOneForAccessAndStartauthorityActivate '0,53' s (IZS: 104f9b80)
+2022-01-19 10:43:41.984 - IZS: TM_00B7_KESSY_ArialTwoForAccessAndStartauthorityActivate '0,5' s (IZS: 104f9b80)
+2022-01-19 10:43:42.038 - IZS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:43:44.481 - AIRBAG: TM_0015_AIRBAG_ECU_Reset '4,03' s (AIRBAG: c523fa0)
+2022-01-19 10:43:48.512 - AIRBAG: TM_0015_AIRBAG_DTC_QualificationTime4s '4,02' s (AIRBAG: c523fa0)
+2022-01-19 10:43:48.568 - AIRBAG: TM_0015_AIRBAG_MicroBeltSwitch_DriverSide '0,04' s (AIRBAG: c523fa0)
+2022-01-19 10:43:48.611 - AIRBAG: TM_0015_AIRBAG_MicroBeltSwitch_PassengerSide '0,03' s (AIRBAG: c523fa0)
+2022-01-19 10:43:48.666 - AIRBAG: TM_0015_AIRBAG_Passenger-Presence-Detection_Passenger_Side '0,04' s (AIRBAG: c523fa0)
+2022-01-19 10:43:48.713 - AIRBAG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:48.851 - MSG_1: TM_GENERIC_ConnectionOpen '0,13' s (MSG_1: c7948c8)
+2022-01-19 10:43:48.932 - MSG_1: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:43:49.132 - KLIMA: TM_GENERIC_ConnectionOpen '0,19' s (KLIMA: c437430)
+2022-01-19 10:43:49.455 - KLIMA: TM_GENERIC_AssemblyCheck '0,32' s (KLIMA: c437430)
+2022-01-19 10:43:49.497 - KLIMA: TM_GENERIC_DTCClear '0,03' s (KLIMA: c437430)
+2022-01-19 10:43:49.683 - KLIMA: TM_0008_KLIMA_SeatHeatingEntireTest '0,16' s (KLIMA: c437430)
+2022-01-19 10:43:54.772 - KLIMA: TM_0008_KLIMA_WasherJetHeatingTest '5,07' s (KLIMA: c437430)
+2022-01-19 10:43:54.817 - KLIMA: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:55.027 - EBKV: TM_GENERIC_ConnectionOpen '0,2' s (EBKV: 9f71520)
+2022-01-19 10:43:55.043 - MU: TM_GENERIC_ConnectionOpen '0,21' s (MU: a04ab00)
+2022-01-19 10:43:55.112 - ELV: TM_GENERIC_ConnectionOpen '0,28' s (ELV: 8e5dc80)
+2022-01-19 10:43:55.182 - ELV: TM_GENERIC_DTCClear '0,06' s (ELV: 8e5dc80)
+2022-01-19 10:43:55.232 - ELV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:55.874 - EBKV: TM_0023_EBKV_DTCClear_OBD '0,83' s (EBKV: 9f71520)
+2022-01-19 10:43:55.917 - EBKV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:56.095 - LNK: TM_GENERIC_ConnectionOpen '0,17' s (LNK: 9f71520)
+2022-01-19 10:43:56.223 - LNK: TM_GENERIC_DTCClear '0,12' s (LNK: 9f71520)
+2022-01-19 10:43:56.271 - LNK: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:56.441 - NRM: TM_GENERIC_ConnectionOpen '0,16' s (NRM: 9f71520)
+2022-01-19 10:43:56.928 - NRM: TM_GENERIC_DTCClear '0,48' s (NRM: 9f71520)
+2022-01-19 10:43:56.980 - NRM: TM_0075_NRM_Reset_emergency_battery_status '0,04' s (NRM: 9f71520)
+2022-01-19 10:43:57.023 - NRM: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:57.197 - GW: TM_GENERIC_ConnectionOpen '0,17' s (GW: 9f71520)
+2022-01-19 10:43:59.526 - MU: TM_005F_MU_FoDUnlock '4,46' s (MU: a04ab00)
+2022-01-19 10:43:59.574 - MU: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:43:59.725 - RV: TM_GENERIC_ConnectionOpen '0,14' s (RV: a04ab00)
+2022-01-19 10:43:59.773 - RV: TM_GENERIC_DTCClear '0,04' s (RV: a04ab00)
+2022-01-19 10:43:59.823 - RV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:44:03.498 - GW: TM_GENERIC_FoDUnlock '6,29' s (GW: 9f71520)
+2022-01-19 10:44:04.306 - GW: TM_0019_GW_DTCClear_OBD '0,8' s (GW: 9f71520)
+2022-01-19 10:44:04.361 - GW: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:44:04.539 - BCM_1: TM_GENERIC_ConnectionOpen '0,17' s (BCM_1: a823260)
+2022-01-19 10:44:07.470 - BCM_1: TM_0009_BCM_1_HazardWarningLampForWorker '2,92' s (BCM_1: a823260)
+2022-01-19 10:44:16.159 - BCM_1: TM_0009_BCM_1_IgnitionChange '8,68' s (BCM_1: a823260)
+2022-01-19 10:44:16.207 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:44:26.399 - KLIMA: TM_GENERIC_ConnectionOpen '0,18' s (KLIMA: 10c230a0)
+2022-01-19 10:44:26.407 - PDC: TM_GENERIC_ConnectionOpen '0,19' s (PDC: d317838)
+2022-01-19 10:44:26.938 - STHZG: TM_GENERIC_ConnectionOpen '0,21' s (STHZG: bcb5448)
+2022-01-19 10:44:27.018 - PDC: TM_GENERIC_DTCClear '0,6' s (PDC: d317838)
+2022-01-19 10:44:27.062 - PDC: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:44:27.210 - TSG_FS: TM_GENERIC_ConnectionOpen '0,14' s (TSG_FS: 8890f58)
+2022-01-19 10:44:27.265 - TSG_FS: TM_0042_TSG_FS_IO_Contr_CheckIllumination '0,05' s (TSG_FS: 8890f58)
+2022-01-19 10:44:27.885 - AIRBAG: TM_GENERIC_ConnectionOpen '0,15' s (AIRBAG: 8e60d20)
+2022-01-19 10:44:29.366 - TSG_FS: TM_0042_TSG_FS_IO_Contr_Central_Locking_Test '2,09' s (TSG_FS: 8890f58)
+2022-01-19 10:44:29.419 - TSG_FS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:44:29.558 - TSG_BS: TM_GENERIC_ConnectionOpen '0,13' s (TSG_BS: 8890f58)
+2022-01-19 10:44:29.617 - TSG_BS: TM_0052_TSG_BS_IO_Contr_CheckIllumination '0,05' s (TSG_BS: 8890f58)
+2022-01-19 10:44:30.536 - AIRBAG: TM_0015_AIRBAG_Key-Operated_Switch_OFF '2,64' s (AIRBAG: 8e60d20)
+2022-01-19 10:44:30.592 - AIRBAG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:44:30.810 - BCM_1: TM_GENERIC_ConnectionOpen '0,21' s (BCM_1: 8e60d20)
+2022-01-19 10:44:31.702 - TSG_BS: TM_0052_TSG_BS_IO_Contr_Central_Locking_Test '2,07' s (TSG_BS: 8890f58)
+2022-01-19 10:44:31.754 - TSG_BS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:44:31.907 - BCM_1: TM_0009_BCM_1_WorkerInformation '1,08' s (BCM_1: 8e60d20)
+2022-01-19 10:44:31.923 - FR_FAS: TM_GENERIC_ConnectionOpen '0,16' s (FR_FAS: 8890f58)
+2022-01-19 10:44:35.987 - KLIMA: TM_0008_KLIMA_CalibrationOfStopPositions '9,57' s (KLIMA: 10c230a0)
+2022-01-19 10:44:36.031 - KLIMA: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:44:38.638 - BCM_1: TM_0009_BCM_1_TrunkLidCondition '6,71' s (BCM_1: 8e60d20)
+2022-01-19 10:44:43.739 - BCM_1: TM_0009_BCM_1_RearPassangerSideSlidingdoorSignals '5,09' s (BCM_1: 8e60d20)
+2022-01-19 10:44:45.662 - FR_FAS: TM_GENERIC_DTCClear '13,73' s (FR_FAS: 8890f58)
+2022-01-19 10:44:49.529 - BCM_1: TM_0009_BCM_1_RearPassangerSideInsideSlidingdoorSignals '5,78' s (BCM_1: 8e60d20)
+2022-01-19 10:44:52.817 - FR_FAS: TM_00A5_FR_FAS_WindShieldHeating '7,15' s (FR_FAS: 8890f58)
+2022-01-19 10:44:52.862 - FR_FAS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:08.824 - BCM_1: TM_0009_BCM_1_Ansteuerung_KL_30G_CargoSpace '19,28' s (BCM_1: 8e60d20)
+2022-01-19 10:45:10.279 - BCM_1: TM_0009_BCM_1_CloseAllDoors '1,44' s (BCM_1: 8e60d20)
+2022-01-19 10:45:10.860 - BCM_1: TM_0009_BCM_1_CentralLockingRearLidLockUnitTestSequence '0,57' s (BCM_1: 8e60d20)
+2022-01-19 10:45:10.908 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:11.066 - AIRBAG: TM_GENERIC_ConnectionOpen '0,15' s (AIRBAG: 8e60d20)
+2022-01-19 10:45:12.941 - AIRBAG: TM_0015_AIRBAG_Key-Operated_Switch_ON '1,87' s (AIRBAG: 8e60d20)
+2022-01-19 10:45:13.033 - AIRBAG: TM_0015_AIRBAG_Finalize_Setup '0,08' s (AIRBAG: 8e60d20)
+2022-01-19 10:45:13.086 - AIRBAG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:45:13.274 - GW: TM_GENERIC_ConnectionOpen '0,18' s (GW: 8e60d20)
+2022-01-19 10:45:13.327 - GW: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:13.539 - BCM_1: TM_GENERIC_ConnectionOpen '0,2' s (BCM_1: 8e60d20)
+2022-01-19 10:45:16.229 - BCM_1: TM_0009_BCM_1_ReversingLightSwitch '2,68' s (BCM_1: 8e60d20)
+2022-01-19 10:45:16.806 - BCM_1: TM_0009_BCM_1_SlidingDoorRearCoDriverControlTest '0,57' s (BCM_1: 8e60d20)
+2022-01-19 10:45:16.865 - BCM_1: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:45:17.017 - ESP: TM_GENERIC_ConnectionOpen '0,14' s (ESP: 8e60d20)
+2022-01-19 10:45:18.446 - ESP: TM_0003_ESP_AutoHoldSwitchAndESCWarningLamp '1,42' s (ESP: 8e60d20)
+2022-01-19 10:45:18.535 - ESP: TM_GENERIC_ConnectionRelease '0,08' s
+2022-01-19 10:45:18.671 - MSG_1: TM_GENERIC_ConnectionOpen '0,13' s (MSG_1: c2480d8)
+2022-01-19 10:45:20.550 - MSG_1: TM_0001_MSG_1_CruiseControlSystemSwitchOn '1,87' s (MSG_1: c2480d8)
+2022-01-19 10:45:22.163 - MSG_1: TM_0001_MSG_1_CruiseControlSystemSwitchOff '1,6' s (MSG_1: c2480d8)
+2022-01-19 10:45:23.305 - MSG_1: TM_0001_MSG_1_ClutchSwitchOn '1,13' s (MSG_1: c2480d8)
+2022-01-19 10:45:24.433 - MSG_1: TM_0001_MSG_1_ClutchtSwitchOff '1,12' s (MSG_1: c2480d8)
+2022-01-19 10:45:25.582 - MSG_1: TM_0001_MSG_1_BrakeLightSwitchOn '1,13' s (MSG_1: c2480d8)
+2022-01-19 10:45:26.728 - MSG_1: TM_0001_MSG_1_BrakeLightSwitchOff '1,13' s (MSG_1: c2480d8)
+2022-01-19 10:45:26.777 - MSG_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:26.921 - TSG_FS: TM_GENERIC_ConnectionOpen '0,14' s (TSG_FS: c2480d8)
+2022-01-19 10:45:28.035 - TSG_FS: TM_0042_TSG_FS_ManCheck_WindowLifter_Button '1,1' s (TSG_FS: c2480d8)
+2022-01-19 10:45:29.156 - TSG_FS: TM_0042_TSG_FS_ManCheck_Lock_Unlock '1,11' s (TSG_FS: c2480d8)
+2022-01-19 10:45:30.256 - TSG_FS: TM_0042_TSG_FS_ManCheck_MirrorMoveSwitch '1,09' s (TSG_FS: c2480d8)
+2022-01-19 10:45:30.313 - TSG_FS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:45:30.465 - TSG_BS: TM_GENERIC_ConnectionOpen '0,15' s (TSG_BS: b7e64a8)
+2022-01-19 10:45:32.366 - TSG_BS: TM_0052_TSG_BS_ManCheck_WindowLifter_Button '1,89' s (TSG_BS: b7e64a8)
+2022-01-19 10:45:32.415 - TSG_BS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:32.589 - BCM_1: TM_GENERIC_ConnectionOpen '0,17' s (BCM_1: b7e64a8)
+2022-01-19 10:45:35.538 - BCM_1: TM_0009_BCM_1_GloveBoxLightingTest '2,93' s (BCM_1: b7e64a8)
+2022-01-19 10:45:38.759 - BCM_1: TM_0009_BCM_1_BonnetContact '3,21' s (BCM_1: b7e64a8)
+2022-01-19 10:45:38.839 - BCM_1: TM_0009_BCM_1_ProductionModeDeactivateInteriorLight '0,07' s (BCM_1: b7e64a8)
+2022-01-19 10:45:38.888 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:39.087 - SMLS_LIN: TM_GENERIC_ConnectionOpen '0,19' s (SMLS_LIN: b7e64a8)
+2022-01-19 10:45:39.147 - SMLS_LIN: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:45:42.081 - STHZG: TM_0018_STHZG_PreFuelPumpTest '75,12' s (STHZG: bcb5448)
+2022-01-19 10:45:42.129 - STHZG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:45:42.391 - STHZG: TM_GENERIC_ConnectionOpen '0,25' s (STHZG: b7e64a8)
+2022-01-19 10:45:59.911 - STHZG: TM_0018_STHZG_MANCHECK_RemoteControlLearnAndCheck '17,5' s (STHZG: b7e64a8)
+2022-01-19 10:46:02.153 - STHZG: TM_0018_STHZG_MANCHECK_RemoteControlAntenna '2,22' s (STHZG: b7e64a8)
+2022-01-19 10:46:02.201 - STHZG: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:02.486 - KLIMA: TM_GENERIC_ConnectionOpen '0,27' s (KLIMA: b576428)
+2022-01-19 10:46:02.500 - ESP: TM_GENERIC_ConnectionOpen '0,29' s (ESP: adbaf08)
+2022-01-19 10:46:02.531 - BCM_1: TM_GENERIC_ConnectionOpen '0,31' s (BCM_1: a43dd08)
+2022-01-19 10:46:02.554 - AAG: TM_GENERIC_ConnectionOpen '0,34' s (AAG: a4eecb8)
+2022-01-19 10:46:02.587 - ESP: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:46:02.658 - AAG: TM_0069_AAG_ProductionModeDeactivate '0,09' s (AAG: a4eecb8)
+2022-01-19 10:46:02.710 - AAG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:02.834 - BCM_1: TM_0009_BCM_1_ProductionModeDeactivate '0,28' s (BCM_1: a43dd08)
+2022-01-19 10:46:02.882 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:02.930 - KLIMA: TM_0008_KLIMA_ProductionModeDeactivate '0,42' s (KLIMA: b576428)
+2022-01-19 10:46:02.994 - KLIMA: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:46:03.059 - MU: TM_GENERIC_ConnectionOpen '0,17' s (MU: d5f0268)
+2022-01-19 10:46:03.148 - KOMBI: TM_GENERIC_ConnectionOpen '0,15' s (KOMBI: 8efc658)
+2022-01-19 10:46:03.172 - MU: TM_005F_MU_ProductionModeDeactivateControl_High '0,1' s (MU: d5f0268)
+2022-01-19 10:46:03.219 - MU: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:03.399 - KOMBI: TM_0017_KOMBI_ProductionModeDeactivate '0,24' s (KOMBI: 8efc658)
+2022-01-19 10:46:03.453 - KOMBI: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:03.634 - GW: TM_GENERIC_ConnectionOpen '0,17' s (GW: d5f0268)
+2022-01-19 10:46:03.688 - GW: TM_0019_GW_CentralProductionModeDectivate '0,05' s (GW: d5f0268)
+2022-01-19 10:46:03.739 - GW: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:03.970 - GW: TM_GENERIC_ConnectionOpen '0,22' s (GW: d5f0268)
+2022-01-19 10:46:04.109 - GW: TM_0019_GW_DTCCheck '0,13' s (GW: d5f0268)
+2022-01-19 10:46:04.154 - GW: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:04.335 - BCM_1: TM_GENERIC_ConnectionOpen '0,17' s (BCM_1: d5f0268)
+2022-01-19 10:46:04.909 - BCM_1: TM_0009_BCM_1_DTCCheck '0,56' s (BCM_1: d5f0268)
+2022-01-19 10:46:04.952 - BCM_1: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:05.090 - AIRBAG: TM_GENERIC_ConnectionOpen '0,13' s (AIRBAG: d5f0268)
+2022-01-19 10:46:05.197 - AIRBAG: TM_0015_AIRBAG_DTCCheck '0,1' s (AIRBAG: d5f0268)
+2022-01-19 10:46:05.251 - AIRBAG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:05.399 - MSG_1: TM_GENERIC_ConnectionOpen '0,14' s (MSG_1: b528590)
+2022-01-19 10:46:05.407 - KLIMA: TM_GENERIC_ConnectionOpen '0,19' s (KLIMA: d5f0268)
+2022-01-19 10:46:05.606 - KLIMA: TM_0008_KLIMA_DTCCheck '0,18' s (KLIMA: d5f0268)
+2022-01-19 10:46:05.662 - KLIMA: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:05.685 - MSG_1: TM_0001_MSG_1_DTCCheck '0,27' s (MSG_1: b528590)
+2022-01-19 10:46:05.721 - STHZG: TM_GENERIC_ConnectionOpen '0,26' s (STHZG: d407278)
+2022-01-19 10:46:05.779 - MSG_1: TM_GENERIC_ConnectionRelease '0,09' s
+2022-01-19 10:46:05.903 - STHZG: TM_0018_STHZG_DTCCheck '0,15' s (STHZG: d407278)
+2022-01-19 10:46:05.948 - KOMBI: TM_GENERIC_ConnectionOpen '0,26' s (KOMBI: c31c108)
+2022-01-19 10:46:05.980 - LNK: TM_GENERIC_ConnectionOpen '0,27' s (LNK: 103e22f0)
+2022-01-19 10:46:05.995 - STHZG: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:06.024 - TSG_FS: TM_GENERIC_ConnectionOpen '0,24' s (TSG_FS: 10441c30)
+2022-01-19 10:46:06.086 - TSG_FS: TM_0042_TSG_FS_DTCCheck '0,05' s (TSG_FS: 10441c30)
+2022-01-19 10:46:06.136 - TSG_FS: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:06.203 - NRM: TM_GENERIC_ConnectionOpen '0,19' s (NRM: a43d030)
+2022-01-19 10:46:06.374 - KOMBI: TM_0017_KOMBI_DTCCheck '0,41' s (KOMBI: c31c108)
+2022-01-19 10:46:06.377 - LNK: TM_0044_LNK_DTCCheck '0,38' s (LNK: 103e22f0)
+2022-01-19 10:46:06.394 - TSG_BS: TM_GENERIC_ConnectionOpen '0,23' s (TSG_BS: cfe54f0)
+2022-01-19 10:46:06.458 - LNK: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:46:06.460 - KOMBI: TM_GENERIC_ConnectionRelease '0,07' s
+2022-01-19 10:46:06.500 - TSG_BS: TM_0052_TSG_BS_DTCCheck '0,09' s (TSG_BS: cfe54f0)
+2022-01-19 10:46:06.575 - TSG_BS: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:46:06.585 - NRM: TM_0075_NRM_DTCCheck '0,37' s (NRM: a43d030)
+2022-01-19 10:46:06.662 - NRM: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:06.739 - PDC: TM_GENERIC_ConnectionOpen '0,27' s (PDC: cc7b6e8)
+2022-01-19 10:46:06.790 - AAG: TM_GENERIC_ConnectionOpen '0,31' s (AAG: d40c838)
+2022-01-19 10:46:06.857 - MU: TM_GENERIC_ConnectionOpen '0,19' s (MU: 8b414b0)
+2022-01-19 10:46:06.869 - IZS: TM_GENERIC_ConnectionOpen '0,27' s (IZS: cf28830)
+2022-01-19 10:46:06.871 - AAG: TM_0069_AAG_DTCCheck '0,07' s (AAG: d40c838)
+2022-01-19 10:46:06.918 - PDC: TM_0076_PDC_DTCCheck '0,15' s (PDC: cc7b6e8)
+2022-01-19 10:46:06.984 - AAG: TM_GENERIC_ConnectionRelease '0,09' s
+2022-01-19 10:46:07.006 - IZS: TM_00B7_KESSY_DTCCheck '0,11' s (IZS: cf28830)
+2022-01-19 10:46:07.062 - PDC: TM_GENERIC_ConnectionRelease '0,13' s
+2022-01-19 10:46:07.103 - IZS: TM_GENERIC_ConnectionRelease '0,08' s
+2022-01-19 10:46:07.122 - MU: TM_005F_MU_DTCCheck '0,25' s (MU: 8b414b0)
+2022-01-19 10:46:07.179 - MU: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:07.226 - ADR: TM_GENERIC_ConnectionOpen '0,22' s (ADR: cc7b6e8)
+2022-01-19 10:46:07.240 - EBKV: TM_GENERIC_ConnectionOpen '0,17' s (EBKV: cf26158)
+2022-01-19 10:46:07.399 - ELV: TM_GENERIC_ConnectionOpen '0,21' s (ELV: dd869a0)
+2022-01-19 10:46:07.454 - ELV: TM_002B_ELV_DTCCheck '0,04' s (ELV: dd869a0)
+2022-01-19 10:46:07.513 - ELV: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:07.555 - EBKV: TM_0023_EBKV_DTCCheck '0,3' s (EBKV: cf26158)
+2022-01-19 10:46:07.614 - EBKV: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:07.736 - FR_FAS: TM_GENERIC_ConnectionOpen '0,2' s (FR_FAS: 8e8d408)
+2022-01-19 10:46:07.823 - ESP: TM_GENERIC_ConnectionOpen '0,2' s (ESP: 887c4e0)
+2022-01-19 10:46:07.893 - ADR: TM_0013_ADR_DTCCheck '0,65' s (ADR: cc7b6e8)
+2022-01-19 10:46:07.901 - FR_FAS: TM_00A5_FR_FAS_DTCCheck '0,12' s (FR_FAS: 8e8d408)
+2022-01-19 10:46:07.949 - ADR: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:07.957 - FR_FAS: TM_GENERIC_ConnectionRelease '0,05' s
+2022-01-19 10:46:08.107 - BCM_1: TM_0009_BCM_1_12VMikoLightingTest '4,35' s
+2022-01-19 10:46:08.239 - ESP: TM_0003_ESP_DTCCheck '0,41' s (ESP: 887c4e0)
+2022-01-19 10:46:08.286 - ESP: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:08.446 - RV: TM_GENERIC_ConnectionOpen '0,15' s (RV: a52af88)
+2022-01-19 10:46:08.557 - RV: TM_006C_RV_DTCCheck '0,09' s (RV: a52af88)
+2022-01-19 10:46:08.601 - RV: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:09.184 - BCM_1: TM_0009_BCM_1_12VSocketDashboard '1,05' s
+2022-01-19 10:46:10.244 - BCM_1: TM_0009_BCM_1_InteriorLightFront '1,05' s
+2022-01-19 10:46:11.232 - TSG_FS: TM_0042_TSG_FS_Man_Check_insideRearviewMirror '0,98' s
+2022-01-19 10:46:11.487 - GW: TM_GENERIC_ConnectionOpen '0,24' s (GW: e120df8)
+2022-01-19 10:46:11.586 - GW: TM_0019_GW_ProductionModeActivateEnergyManagment '0,08' s (GW: e120df8)
+2022-01-19 10:46:11.634 - GW: TM_GENERIC_ConnectionRelease '0,04' s
+2022-01-19 10:46:12.778 - FAZIT: TM_0000_FAZIT_KS_SendAssemblies '1,53' s
+2022-01-19 10:46:13.209 - FAZIT: TM_0000_FAZIT_SFD_Documentation '0,42' s
+2022-01-19 10:46:13.584 - FAZIT: TM_0000_FAZIT_VKMS_DocumentUnlockedECUs '0,37' s
+2022-01-19 10:46:13.803 - BCM_1: TM_GENERIC_ConnectionOpen '0,2' s (BCM_1: dda8d50)
+2022-01-19 10:46:13.902 - MSG_1: TM_GENERIC_FISeQS_ECU '0,3' s
+2022-01-19 10:46:14.071 - ESP: TM_GENERIC_FISeQS_ECU '0,16' s
+2022-01-19 10:46:14.282 - KLIMA: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:14.430 - BCM_1: TM_0009_BCM_1_IgnitionOFF '0,61' s (BCM_1: dda8d50)
+2022-01-19 10:46:14.495 - BCM_1: TM_GENERIC_ConnectionRelease '0,06' s
+2022-01-19 10:46:14.571 - RL: TM_GENERIC_FISeQS_ECU '0,28' s
+2022-01-19 10:46:14.745 - LDS: TM_GENERIC_FISeQS_ECU '0,17' s
+2022-01-19 10:46:14.957 - SMLS_LIN: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:15.144 - BFK: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:15.363 - ADR: TM_GENERIC_FISeQS_ECU '0,21' s
+2022-01-19 10:46:15.553 - AIRBAG: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:15.765 - KOMBI: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:15.951 - STHZG: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:16.138 - FFB_STHZG: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:16.364 - GW: TM_GENERIC_FISeQS_ECU '0,22' s
+2022-01-19 10:46:16.554 - MFL: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:16.763 - BDM: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:16.959 - EBKV: TM_GENERIC_FISeQS_ECU '0,19' s
+2022-01-19 10:46:17.181 - LNK: TM_GENERIC_FISeQS_ECU '0,21' s
+2022-01-19 10:46:17.361 - MU: TM_GENERIC_FISeQS_ECU '0,17' s
+2022-01-19 10:46:17.575 - TSG_FS: TM_GENERIC_FISeQS_ECU '0,21' s
+2022-01-19 10:46:17.762 - TSG_BS: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:17.943 - AAG: TM_GENERIC_FISeQS_ECU '0,17' s
+2022-01-19 10:46:18.154 - NRM: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:18.346 - PDC: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:18.589 - FR_FAS: TM_GENERIC_FISeQS_ECU '0,23' s
+2022-01-19 10:46:18.781 - IZS: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:18.996 - RV: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:19.212 - ELV: TM_GENERIC_FISeQS_ECU '0,21' s
+2022-01-19 10:46:19.422 - ILM: TM_GENERIC_FISeQS_ECU '0,2' s
+2022-01-19 10:46:19.615 - BCM_1: TM_GENERIC_FISeQS_ECU '0,18' s
+2022-01-19 10:46:19.643 - FISeQS: TM_FISeQS_Gesamtpruefung_ML5_C5_ECOS_1396 '0,02' s
+------------------------TIME ANALYSIS TOOL-----------------------------
+2022-01-19 10:46:19.684 MAGIC LOG FILEMAKER Done with KNR: '35202203135237'
